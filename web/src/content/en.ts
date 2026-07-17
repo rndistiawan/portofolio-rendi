@@ -160,10 +160,10 @@ export const en: SiteCopy = {
         role: "Clinic Leader",
         period: "Sep 2023 - Present",
         bullets: [
-          "Lead daily wellness/HBOT operations: team coordination, scheduling, and service standards.",
-          "Maintain clear patient communication: welcome, explain services, and follow up professionally.",
-          "Manage admin, documentation, and daily priorities so workflows stay stable.",
-          "Run the clinic’s digital presence (content and social) so it matches service on the ground.",
+          "Lead daily wellness/HBOT operations: workflow coordination, scheduling, and service standards.",
+          "Serve hyperbaric oxygen therapy (HBOT) patients with clear, professional communication.",
+          "Operate the chamber system and check oxygen cylinder stock.",
+          "Cover admin & front desk backup, daily documentation, and clinic social media.",
         ],
       },
       {
@@ -171,8 +171,8 @@ export const en: SiteCopy = {
         role: "EV Technician Support (Internship)",
         period: "Jan 2023 - Aug 2023",
         bullets: [
-          "Supported electrical assembly on an electric bajaj project.",
-          "Collaborated with the team on install and maintenance of EV technology.",
+          "Supported install, electrical assembly, and maintenance of electric vehicle technology.",
+          "Helped develop and maintain electric bajaj systems with the team.",
         ],
       },
       {
@@ -180,8 +180,8 @@ export const en: SiteCopy = {
         role: "VSAT Technician (Internship)",
         period: "Aug 2022 - Dec 2022",
         bullets: [
-          "Supported install and maintenance of VSAT satellite links in the field.",
-          "Collaborated on troubleshooting to keep systems stable.",
+          "Installed and maintained VSAT satellite networks, including remote areas.",
+          "Collaborated on troubleshooting to keep satellite communication systems stable.",
         ],
       },
     ],

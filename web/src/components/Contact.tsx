@@ -57,8 +57,8 @@ export function Contact() {
                   </a>
                   <a
                     href={site.cv}
-                    download
-                    className="inline-flex min-h-11 items-center rounded-full px-4 py-3 text-sm font-medium text-[var(--color-ink-soft)] underline-offset-4 hover:underline"
+                    download="CV-Rendi-Setiawan.pdf"
+                    className="inline-flex min-h-11 items-center rounded-full border border-[var(--color-border-strong)] bg-[var(--color-paper)] px-6 py-3 text-sm font-semibold text-[var(--color-ink)] transition-colors hover:border-[var(--color-ink)] hover:bg-[var(--color-paper-2)]"
                   >
                     {site.cta.cv}
                   </a>

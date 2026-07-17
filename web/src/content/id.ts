@@ -160,10 +160,10 @@ export const id: SiteCopy = {
         role: "Leader Klinik",
         period: "Sep 2023 - Sekarang",
         bullets: [
-          "Memimpin operasional harian layanan wellness/HBOT: koordinasi tim, penjadwalan, dan standar pelayanan.",
-          "Menjaga kualitas komunikasi dengan pasien: sambutan, penjelasan layanan, dan follow-up yang jelas.",
-          "Mengelola administrasi, dokumentasi, dan prioritas tugas agar alur kerja tetap stabil.",
-          "Mengurus kehadiran digital klinik (konten dan media sosial) agar selaras dengan layanan di lapangan.",
+          "Memimpin operasional harian layanan wellness/HBOT: koordinasi alur kerja, penjadwalan, dan standar pelayanan.",
+          "Melayani pasien terapi hiperbarik oksigen (HBOT) dengan komunikasi yang jelas dan profesional.",
+          "Bertanggung jawab pada pengoperasian mesin chamber serta pengecekan stok tabung oksigen.",
+          "Backup admin & resepsionis, dokumentasi harian, serta pengelolaan media sosial klinik.",
         ],
       },
       {
@@ -171,8 +171,8 @@ export const id: SiteCopy = {
         role: "Support Teknisi Kendaraan Listrik (Magang)",
         period: "Jan 2023 - Agu 2023",
         bullets: [
-          "Membantu perakitan kelistrikan pada proyek bajaj listrik.",
-          "Berkolaborasi dengan tim pada instalasi dan pemeliharaan teknologi kendaraan listrik.",
+          "Terlibat dalam instalasi, perakitan kelistrikan, dan pemeliharaan teknologi kendaraan listrik.",
+          "Mendukung pengembangan dan pemeliharaan teknologi bajaj listrik bersama tim.",
         ],
       },
       {
@@ -180,8 +180,8 @@ export const id: SiteCopy = {
         role: "Teknisi VSAT (Magang)",
         period: "Agu 2022 - Des 2022",
         bullets: [
-          "Membantu instalasi dan pemeliharaan jaringan satelit VSAT di lapangan.",
-          "Berkolaborasi dalam troubleshooting untuk menjaga stabilitas sistem.",
+          "Bertanggung jawab pada instalasi dan pemeliharaan jaringan satelit VSAT (termasuk wilayah terpencil).",
+          "Berkolaborasi dengan tim untuk troubleshooting dan menjaga sistem komunikasi satelit stabil.",
         ],
       },
     ],
