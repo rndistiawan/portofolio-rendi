@@ -11,6 +11,8 @@ description: Use when writing or rewriting portfolio, freelance landing, or pers
 
 **Core principle:** Show how you work and who you help; let the reader decide. One calm CTA is enough.
 
+**Portfolio value principle:** Every section answers *“What does the client need → what do they get from me?”* Soft tone never drops this clarity.
+
 ## When to Use
 
 - Portfolio / personal brand / freelance service pages
@@ -52,13 +54,24 @@ Every section of portfolio copy MUST land in this shape:
 
 | Section | Soft recipe |
 |---------|-------------|
-| **Tagline** | What you help with + how (ide, copy, konsistensi). 1 sentence. No CTA. |
-| **About** | Who you are → relevant background → how that shows up in work. No “chat sekarang” in body. |
-| **Services** | “Yang bisa kita kerjakan” + honest scope. No “langsung order”. |
-| **Process** | Calm steps; collaboration language. |
-| **Projects** | Work angles + honesty about proof limits. |
-| **Experience** | Role title honest; bullets = tugas + nilai jual bagi klien (leadership → reliability in freelance), no fake metrics. |
-| **Contact** | Open door: “Kalau ada yang ingin didiskusikan…” + how you’ll reply. |
+| **Tagline** | This is my portfolio + what the client gets (clarity, tidy feed, ready content). No CTA. |
+| **About** | Own the site as portfolio → need you meet → background that proves reliability. |
+| **Services** | Each card: *Butuh X?* → *Anda dapat Y.* Hint = outcome label. No “order now”. |
+| **Process** | How the client gets the outcome (need → match → deliver → review). |
+| **Projects** | Frame as “need answered”, not vanity. Honest about proof limits. |
+| **Experience** | Role honest; bullets = task + value client feels, no fake metrics. |
+| **Contact** | Invite them to name the need; calm WA/email. |
+
+### Client value map (Rendi portfolio)
+
+| Client need | They get from Rendi |
+|-------------|---------------------|
+| Unclear brand message | Clear copy / messaging direction |
+| Tired of running social alone | Content plan + posting rhythm |
+| Messy feed | Simple visual design (Canva) |
+| Clips not ready to post | Short video edit (reels/TikTok) |
+| Guessing at digital | Calm digital marketing direction |
+| Need someone reliable | Leader/clinic discipline + finish work |
 
 ### Experience bullets (Leader / service roles)
 

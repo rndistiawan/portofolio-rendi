@@ -9,13 +9,13 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Rendi Setiawan | Digital Marketing & Social Media Freelance",
+  title: "Rendi Setiawan | Portofolio Digital Marketing & Social Media",
   description:
-    "Freelance solo digital marketing & social media. Manfaat: pesan brand lebih jelas, feed lebih rapi, konten konsisten. Desain & edit video. Jakarta Timur.",
+    "Portofolio Rendi Setiawan. Nilai jual untuk klien: pesan brand lebih jelas, feed rapi, konten siap tayang (copy, desain, video). Freelance solo, Jakarta Timur.",
   openGraph: {
-    title: "Rendi Setiawan | Digital Marketing & Social Media Freelance",
+    title: "Rendi Setiawan | Digital Marketing & Social Media Portfolio",
     description:
-      "Solo freelance digital marketing & social media. Clearer brand message, tidier feed, steady content. Design & video edits. East Jakarta.",
+      "Portfolio of Rendi Setiawan. Client value: clearer brand message, tidier feed, ready-to-post content. Solo freelance, East Jakarta.",
     locale: "id_ID",
     type: "website",
   },

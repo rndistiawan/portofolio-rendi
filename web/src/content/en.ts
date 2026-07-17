@@ -1,27 +1,30 @@
 import type { SiteCopy } from "./types";
 
-/** English — soft selling, benefit-led, solo freelance */
+/**
+ * Rendi’s portfolio — soft selling + client value.
+ * Every section answers: “What does the client need → what do they get?”
+ */
 export const en: SiteCopy = {
   role: "Digital Marketing · Social Media · Freelance",
   location: "East Jakarta",
   tagline:
-    "The benefit is simple: a clearer brand message, a tidier feed, and something people remember — through digital marketing done calmly.",
+    "This is my portfolio. Here you can see what I offer — and what you get: a clearer brand message, a tidier feed, content ready to publish, and a reliable partner without hard-sell pressure.",
   whatsappPrefill:
-    "Hi Rendi, I just saw your portfolio. If you're open to it, may I share what I need for digital marketing / social media?",
+    "Hi Rendi, I saw your portfolio. I’d like to share what I need for digital marketing / social media — can we match it to what would help me most?",
   hero: {
-    availability: "East Jakarta · Solo freelance · Social media focus",
+    availability: "East Jakarta · Solo freelance · Portfolio & offer",
     ctaPrimary: "Message on WhatsApp",
     ctaSecondary: "Send email",
   },
   marquee: [
-    "Digital marketing",
-    "Content ideas",
+    "Clear brand message",
+    "Tidy feed",
+    "Ready-to-post content",
+    "Posting rhythm",
     "Clear copy",
     "Visual design",
     "Video editing",
-    "Posting schedule",
-    "TikTok Ads",
-    "Brand voice",
+    "Calm approach",
   ],
   nav: [
     { label: "About", href: "#tentang" },
@@ -52,82 +55,83 @@ export const en: SiteCopy = {
     mobileNavAria: "Mobile menu",
   },
   about: {
-    title: "Nice to meet you",
+    title: "This is my portfolio",
     paragraphs: [
-      "I'm Rendi — a solo freelance digital marketer and social media partner. I help brands (including fellow freelancers and small businesses) show up online in a way that feels clear, human, and useful to their audience.",
-      "My full focus is social and digital work: planning, writing, design, short video edits, and posting. As Clinic Leader in wellness/HBOT service, I am used to leading service flow, communicating clearly, and finishing work properly.",
-      "What I hope you feel after we collaborate: less content stress, a brand message people understand, and a posting rhythm that is realistic — without hard sell in every message.",
+      "I'm Rendi Setiawan — a solo freelance digital marketer and social media partner. This site is where I introduce myself, how I work, and my value to you: helping you get an online presence that is tidy, easy to understand, and realistic to run.",
+      "If you’re tired of handling social alone, unclear on brand messaging, or need content (copy, design, short video) ready to post — that’s where I can help. No fake metrics; focus on what you actually need.",
+      "As Clinic Leader in wellness/HBOT, I learned to lead service flow, communicate clearly, and finish the job. Field work (VSAT, EV) trained care and follow-through. That’s what I bring into freelance work.",
     ],
     values: [
       {
-        title: "Benefits you can feel",
-        body: "Every step aims at outcomes you notice: clearer messaging, a neater look, and steady presence.",
+        title: "What you need",
+        body: "Clarity first: what should feel better on social? We match that need to the right work — not a generic package.",
       },
       {
-        title: "A personal approach",
-        body: "Solo freelance means direct communication. We match your brand’s pace and tone.",
+        title: "What you get",
+        body: "Clearer messaging, a tidier look, a posting rhythm you can keep, and content/files ready to use — with direct communication to me.",
       },
       {
-        title: "From idea to delivery",
-        body: "Not only advice — copy, design, short video edits, and posting can be done together.",
+        title: "How I work",
+        body: "A calm path: listen → direction → delivery → review. Soft selling: you decide; I show up as a partner, not a pressure close.",
       },
     ],
   },
   services: {
-    title: "What we can work on together",
+    title: "Value: what you can get",
     intro:
-      "Digital marketing first. I also help with visual design and short video editing so content is ready to publish — no public price list; we talk first if it feels like a fit.",
+      "Each offer below answers a common client need. Digital marketing first; design and short video so content doesn’t stall as ideas only. Pricing after we fit — no public price list here.",
     items: [
       {
         title: "Digital marketing",
-        body: "Shape your digital effort: brand message, channels, and content that support your goals — with realistic steps.",
-        hint: "Main focus",
+        body: "Need direction, not guesswork? You get a clear frame for message, channels, and content that support your goals — with realistic steps.",
+        hint: "You get: clear direction",
       },
       {
         title: "Social media care",
-        body: "Content plans, captions, and a posting rhythm on the platforms you use — so the feed stays alive without you carrying it alone.",
-        hint: "IG · TikTok · more",
+        body: "Tired of carrying the feed alone? You get content plans, captions, and a posting rhythm on the platforms you use — so the brand stays active without only you holding it.",
+        hint: "You get: social handled",
       },
       {
         title: "Content copywriting",
-        body: "Readable text: captions, hooks, and lines that help people see the benefit of your brand.",
-        hint: "Clear copy",
+        body: "Brand message feels scattered? You get readable text: captions, hooks, and lines that help people see your benefit.",
+        hint: "You get: clear copy",
       },
       {
         title: "Visual design",
-        body: "Simple feed visuals and assets (Canva) so posts look tidy and on-brand.",
-        hint: "Content design",
+        body: "Feed looks messy? You get simple visuals (Canva) that look tidy and on-brand — ready for posts.",
+        hint: "You get: a cleaner look",
       },
       {
         title: "Short video editing",
-        body: "Cut, tidy, and prepare short videos (reels / TikTok) so they are ready to post with a clear flow.",
-        hint: "Short video",
+        body: "Have clips but nothing ready to post? You get short videos (reels / TikTok) cut, tidied, and with a clear flow.",
+        hint: "You get: ready-to-post video",
       },
     ],
   },
   process: {
-    title: "How we approach it",
-    intro: "A calm, clear path — starting with a conversation, not pressure.",
+    title: "How you get the outcome",
+    intro:
+      "A simple path so your needs are heard first, then delivered — no pressure in the first message.",
     steps: [
       {
         step: "01",
-        title: "A first chat",
-        body: "Share your brand, goals, and what you want to feel better about on social.",
+        title: "Share the need",
+        body: "Brand, goals, and what you most want to improve. I listen first.",
       },
       {
         step: "02",
-        title: "Benefit-led direction",
-        body: "We outline themes, tone, and formats that help your audience most.",
+        title: "Match the value",
+        body: "We pick the relevant work: what you actually need, not everything at once.",
       },
       {
         step: "03",
-        title: "Make it together",
-        body: "Copy, design, video edits, and posting or file handoff as agreed.",
+        title: "Make & hand off",
+        body: "Copy, design, video, posting or files — as agreed, with clear updates.",
       },
       {
         step: "04",
-        title: "Review & refine",
-        body: "We notice what works, then adjust for the next stretch.",
+        title: "Review the benefit",
+        body: "We notice what already feels better, then adjust for the next stretch.",
       },
     ],
   },
@@ -144,23 +148,23 @@ export const en: SiteCopy = {
     ],
   },
   quoteBand: {
-    text: "Good content shows its benefit: people understand you, the brand looks put-together, and you are not exhausted inventing every post alone.",
+    text: "A useful portfolio isn’t the loudest promise — it’s the one that helps a client see: this is what I need, and this is what I can get.",
     by: "Rendi Setiawan",
   },
   experience: {
     title: "Work experience",
     intro:
-      "Background that shapes how I work: leading clinic service, careful operations, and digital execution.",
+      "Background that shapes my value to clients: can lead service, careful in operations, reliable in digital delivery.",
     items: [
       {
         company: "Salama Wellness Center · HBOT Clinic",
         role: "Clinic Leader",
         period: "Sep 2023 - Present",
         bullets: [
-          "Lead daily wellness/HBOT service flow: team coordination, patient scheduling, and service standards so the patient journey feels clear and calm.",
-          "Own frontline communication quality — welcome, explain, and follow up with patients in language that is clear and professional.",
-          "Run admin, documentation, and day-to-day priorities so operations do not stall at critical points.",
-          "Care for the clinic’s digital presence (content & social) so it matches real service — the same value I bring to freelance clients: tidy, consistent, and benefit-led.",
+          "Lead daily wellness/HBOT service flow: team coordination, patient scheduling, and standards — leadership clients feel as clear communication and finished work.",
+          "Own frontline communication quality: welcome, explain, follow up — the same clarity I bring to freelance clients.",
+          "Run admin, docs, and daily priorities so operations don’t stall — the same pattern for content calendars and file handoff.",
+          "Care for the clinic’s digital presence so it matches real service — value to you: tidy, consistent, benefit-led content, not empty decoration.",
         ],
       },
       {
@@ -168,8 +172,8 @@ export const en: SiteCopy = {
         role: "EV Technician Support (Internship)",
         period: "Jan 2023 - Aug 2023",
         bullets: [
-          "Helped with electrical assembly on an electric bajaj project.",
-          "Worked with the team on install and maintenance of EV tech.",
+          "Helped with electrical assembly on an electric bajaj project — care and ownership of the task.",
+          "Worked with the team on install and maintenance — collaboration I bring into content projects.",
         ],
       },
       {
@@ -177,26 +181,26 @@ export const en: SiteCopy = {
         role: "VSAT Technician (Internship)",
         period: "Aug 2022 - Dec 2022",
         bullets: [
-          "Helped install and maintain VSAT satellite links in the field.",
-          "Collaborated on troubleshooting so systems stayed stable.",
+          "Helped install and maintain VSAT links in the field — real-world problem solving.",
+          "Collaborated on troubleshooting for stable systems — the habit of finishing the job for clients.",
         ],
       },
     ],
   },
   projects: {
-    title: "Relevant angles of work",
+    title: "Work angles (for client needs)",
     intro:
-      "Three sides of experience that often benefit clients. Honest note: no metrics I cannot show.",
+      "Three angles that answer client needs. Honest: no metrics I cannot show.",
     items: [
       {
         title: "Social for services & brands",
         tag: "Social Media",
         summary:
-          "From Clinic Leader experience: a digital presence that feels warm and professional — so people can trust you and see the benefit you offer.",
+          "Need: to be trusted and understood. You get a model of warm, professional digital presence aligned with real service — from Clinic Leader experience.",
         points: [
-          "Helpful, informative content",
+          "Content that helps people decide",
           "Aligned with daily service standards",
-          "Consistency over invented numbers",
+          "Consistency first; no invented numbers",
         ],
         image: "/assets/mood-desk.jpg",
         span: "wide",
@@ -205,11 +209,11 @@ export const en: SiteCopy = {
         title: "Digital marketing foundation",
         tag: "Certification",
         summary:
-          "Structure through copywriting and TikTok Ads (MySkill) — so execution has direction, not guesswork.",
+          "Need: not guessing. You get a partner with formal structure in copywriting and TikTok Ads (MySkill).",
         points: [
           "Copywriting Introduction (MySkill)",
           "TikTok Ads: BTA, CKTA, MTA, STA",
-          "Fits small brands & freelancers",
+          "Fits small brands, services & freelancers",
         ],
         image: "/assets/mood-linen.jpg",
         span: "half",
@@ -218,11 +222,11 @@ export const en: SiteCopy = {
         title: "Discipline from field work",
         tag: "Background",
         summary:
-          "VSAT and EV work trained problem-solving and finishing the job — habits that carry into content.",
+          "Need: someone who finishes. VSAT & EV trained problem-solving and ownership until the task is done.",
         points: [
           "Field troubleshooting",
           "Team collaboration",
-          "Care until it is done",
+          "Care until it’s complete",
         ],
         image: "/assets/mood-leaves.jpg",
         span: "half",
@@ -230,9 +234,9 @@ export const en: SiteCopy = {
     ],
   },
   skills: {
-    title: "Skills",
+    title: "Skills that meet the need",
     intro:
-      "Core focus on digital marketing, content, design, and video editing. Soft skills support a comfortable approach.",
+      "Core skills for what you need online. Soft skills for a comfortable collaboration.",
     labels: {
       primary: "Digital focus",
       soft: "How I work",
@@ -264,7 +268,7 @@ export const en: SiteCopy = {
   },
   certificates: {
     title: "Certificates",
-    intro: "Formal learning in copywriting and TikTok ads.",
+    intro: "Formal learning proof — so clients see the foundation in copy and TikTok Ads.",
     items: [
       { name: "Copywriting Introduction", issuer: "MySkill", group: "Copy" },
       { name: "TikTok Ads - BTA", issuer: "MySkill", group: "Ads" },
@@ -276,8 +280,8 @@ export const en: SiteCopy = {
     ],
   },
   contact: {
-    title: "Feel free to reach out",
-    body: "Pick whatever is easier: WhatsApp or Gmail. Share your brand and what you’d like to improve — we start with a conversation, no commitment in the first message.",
+    title: "Tell me what you need",
+    body: "Share your brand and the most important need (social, copy, design, video, or digital direction). Pick WhatsApp or Gmail — we match first what helps you most, no commitment in the first message.",
   },
   education: {
     school: "SMKN 69 Jakarta",
@@ -286,11 +290,11 @@ export const en: SiteCopy = {
     line: "Graduate of SMKN 69 Jakarta, Mechatronics Engineering (2019 - 2023).",
   },
   footer: {
-    blurb: "Freelance Digital Marketing & Social Media · East Jakarta",
+    blurb: "Portfolio · Freelance Digital Marketing & Social Media · East Jakarta",
   },
   meta: {
-    title: "Rendi Setiawan | Digital Marketing & Social Media Freelance",
+    title: "Rendi Setiawan | Digital Marketing & Social Media Portfolio",
     description:
-      "Solo freelance digital marketing & social media. Benefits: clearer brand message, tidier feed, steady content. Design & video edits. East Jakarta.",
+      "Portfolio of Rendi Setiawan. Client value: clearer brand message, tidier feed, ready-to-post content (copy, design, video). Solo freelance, East Jakarta.",
   },
 };
