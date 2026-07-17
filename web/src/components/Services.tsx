@@ -39,10 +39,10 @@ export function Services() {
             return (
               <StaggerItem key={item.title} className={spanClass(i, total)}>
                 <article
-                  className={`flex h-full flex-col justify-between rounded-[var(--radius-card)] border border-[var(--color-border)] p-6 sm:p-8 ${
+                  className={`flex h-full flex-col justify-between rounded-[var(--radius-card)] border p-6 sm:p-8 ${
                     wide
-                      ? "bg-[var(--color-forest)] text-[var(--color-on-accent)]"
-                      : "bg-[var(--color-paper-2)]"
+                      ? "border-[var(--color-forest)] bg-[var(--color-forest)] text-[var(--color-on-accent)]"
+                      : "hc-card border-[var(--color-border-strong)] bg-[var(--color-paper-2)]"
                   }`}
                 >
                   <div>

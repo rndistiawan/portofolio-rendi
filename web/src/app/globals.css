@@ -1,54 +1,66 @@
-/* design-taste · portfolio soft-forest · variance 7 · motion 5 · density 3 */
+/* stitch-design-taste · high-contrast editorial · variance 7 · motion 5 · density 4
+   See web/DESIGN.md for full semantic system */
 @import "tailwindcss";
 
 :root {
-  --color-paper: oklch(0.975 0.006 120);
-  --color-paper-2: oklch(0.95 0.012 125);
-  --color-ink: oklch(0.24 0.025 150);
-  --color-ink-soft: oklch(0.4 0.02 150);
-  --color-ink-muted: oklch(0.52 0.015 150);
-  --color-border: oklch(0.88 0.02 140);
-  --color-border-strong: oklch(0.78 0.03 145);
-  --color-accent: oklch(0.48 0.09 152);
-  --color-accent-hover: oklch(0.42 0.095 152);
-  --color-accent-deep: oklch(0.36 0.08 152);
-  --color-accent-soft: oklch(0.91 0.035 148);
-  --color-forest: oklch(0.34 0.06 155);
-  --color-on-accent: oklch(0.98 0.01 145);
-  --color-peach-soft: oklch(0.93 0.03 55);
-  --color-focus: oklch(0.48 0.09 152);
-  --radius-card: 1.25rem;
+  /* Paper / surface — bright for contrast */
+  --color-paper: #fafaf8;
+  --color-paper-2: #ffffff;
+  /* Ink — near charcoal, never pure black */
+  --color-ink: #141816;
+  --color-ink-soft: #3f4541;
+  --color-ink-muted: #6b736e;
+  /* Edges — stronger than soft-forest */
+  --color-border: #d6dbd7;
+  --color-border-strong: #a8b0aa;
+  /* Single accent: Ember (warm copper, sat < 80%) */
+  --color-accent: #c45c26;
+  --color-accent-hover: #a34b1e;
+  --color-accent-deep: #8f4019;
+  --color-accent-soft: #f5e6dc;
+  /* Punch band for inverted blocks */
+  --color-forest: #1e3d32;
+  --color-on-accent: #f4f7f5;
+  --color-peach-soft: #f5e6dc;
+  --color-focus: #c45c26;
+  --radius-card: 1.35rem;
   --radius-btn: 999px;
-  --font-display: var(--font-plus-jakarta);
-  --font-body: var(--font-plus-jakarta);
+  --font-display: var(--font-outfit);
+  --font-body: var(--font-outfit);
   --z-nav: 40;
   --z-grain: 50;
+  /* Shadow tinted to charcoal */
+  --shadow-card: 0 18px 50px -28px rgb(20 24 22 / 0.28);
+  --shadow-photo: 0 28px 60px -28px rgb(20 24 22 / 0.38);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-paper: oklch(0.18 0.02 150);
-    --color-paper-2: oklch(0.22 0.025 150);
-    --color-ink: oklch(0.94 0.01 145);
-    --color-ink-soft: oklch(0.78 0.015 145);
-    --color-ink-muted: oklch(0.62 0.015 145);
-    --color-border: oklch(0.32 0.02 150);
-    --color-border-strong: oklch(0.42 0.03 150);
-    --color-accent: oklch(0.68 0.1 152);
-    --color-accent-hover: oklch(0.74 0.1 152);
-    --color-accent-deep: oklch(0.78 0.08 152);
-    --color-accent-soft: oklch(0.28 0.04 150);
-    --color-forest: oklch(0.26 0.05 155);
-    --color-on-accent: oklch(0.16 0.02 150);
-    --color-peach-soft: oklch(0.28 0.03 55);
-    --color-focus: oklch(0.72 0.1 152);
+    --color-paper: #121514;
+    --color-paper-2: #1a1f1c;
+    --color-ink: #f2f4f3;
+    --color-ink-soft: #b8c0bb;
+    --color-ink-muted: #8a938e;
+    --color-border: #2c3330;
+    --color-border-strong: #4a534e;
+    --color-accent: #e07a45;
+    --color-accent-hover: #eb8f5f;
+    --color-accent-deep: #f0a57a;
+    --color-accent-soft: #3a2820;
+    --color-forest: #0f241c;
+    /* Keep light text on accent + forest punch for WCAG contrast */
+    --color-on-accent: #f4f7f5;
+    --color-peach-soft: #2a221c;
+    --color-focus: #e07a45;
+    --shadow-card: 0 18px 50px -28px rgb(0 0 0 / 0.55);
+    --shadow-photo: 0 28px 60px -28px rgb(0 0 0 / 0.65);
   }
 }
 
 @theme inline {
   --color-background: var(--color-paper);
   --color-foreground: var(--color-ink);
-  --font-sans: var(--font-plus-jakarta);
+  --font-sans: var(--font-outfit);
 }
 
 html {
@@ -63,14 +75,14 @@ body {
   overflow-x: clip;
 }
 
-/* Grain overlay - fixed, non-scrolling */
+/* Subtle grain — lower than soft-forest so contrast stays crisp */
 body::after {
   content: "";
   position: fixed;
   inset: 0;
   z-index: var(--z-grain);
   pointer-events: none;
-  opacity: 0.035;
+  opacity: 0.022;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
@@ -116,4 +128,13 @@ a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--color-focus);
   outline-offset: 2px;
+}
+
+/* High-contrast utility hooks used by sections */
+.hc-card {
+  box-shadow: var(--shadow-card);
+}
+
+.hc-photo {
+  box-shadow: var(--shadow-photo);
 }

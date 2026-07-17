@@ -21,14 +21,14 @@ export function Nav() {
     <header
       className={`fixed inset-x-0 top-0 z-[var(--z-nav)] transition-[background,box-shadow] duration-300 ${
         scrolled
-          ? "border-b border-[var(--color-border)] bg-[color-mix(in_oklab,var(--color-paper)_90%,transparent)] backdrop-blur-md"
+          ? "border-b-2 border-[var(--color-ink)] bg-[color-mix(in_srgb,var(--color-paper)_92%,transparent)] backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-8">
         <a
           href="#atas"
-          className="font-[family-name:var(--font-display)] text-[0.95rem] font-semibold tracking-tight text-[var(--color-ink)]"
+          className="font-[family-name:var(--font-display)] text-[0.95rem] font-bold tracking-tight text-[var(--color-ink)]"
         >
           {site.name}
         </a>

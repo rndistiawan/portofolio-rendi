@@ -39,10 +39,10 @@ export function Hero() {
           alt=""
           fill
           priority
-          className="object-cover opacity-[0.18] dark:opacity-[0.1]"
+          className="object-cover opacity-[0.12] contrast-125 dark:opacity-[0.08]"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,var(--color-paper)_0%,color-mix(in_oklab,var(--color-paper)_75%,transparent)_45%,var(--color-paper)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,var(--color-paper)_0%,color-mix(in_srgb,var(--color-paper)_82%,transparent)_50%,var(--color-paper)_100%)]" />
       </div>
 
       <HeroCanvas />
@@ -50,20 +50,20 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-7xl items-end gap-10 px-4 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
         <div className="min-w-0 pb-2">
           <motion.p
-            className="mb-3 text-sm font-medium text-[var(--color-accent-deep)]"
+            className="mb-3 text-sm font-semibold tracking-wide text-[var(--color-accent)]"
             {...item(0.05)}
           >
             {site.hero.availability}
           </motion.p>
           <motion.h1
             id="hero-heading"
-            className="font-[family-name:var(--font-display)] text-[clamp(2.4rem,5.5vw,4rem)] font-semibold leading-[1.05] tracking-tight text-[var(--color-ink)]"
+            className="font-[family-name:var(--font-display)] text-[clamp(2.5rem,5.8vw,4.25rem)] font-bold leading-[1.02] tracking-[-0.035em] text-[var(--color-ink)]"
             {...item(0.12)}
           >
             {site.name}
           </motion.h1>
           <motion.p
-            className="mt-2 text-lg font-medium text-[var(--color-accent-deep)] sm:text-xl"
+            className="mt-2 text-lg font-semibold text-[var(--color-accent-deep)] sm:text-xl"
             {...item(0.18)}
           >
             {site.role}
@@ -83,14 +83,14 @@ export function Hero() {
               href={site.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center gap-2 rounded-full bg-[var(--color-accent)] px-6 py-3 text-sm font-semibold text-[var(--color-on-accent)] transition-[transform,background] hover:bg-[var(--color-accent-hover)] active:translate-y-px"
+              className="inline-flex min-h-11 items-center gap-2 rounded-full bg-[var(--color-accent)] px-6 py-3 text-sm font-semibold text-[var(--color-on-accent)] shadow-[0_10px_28px_-12px_rgb(196_92_38/0.55)] transition-[transform,background] hover:bg-[var(--color-accent-hover)] active:translate-y-px"
             >
               {site.hero.ctaPrimary}
               <ArrowUpRight size={16} weight="bold" />
             </a>
             <a
               href={`mailto:${site.email}`}
-              className="inline-flex min-h-11 items-center rounded-full border border-[var(--color-border-strong)] bg-[var(--color-paper)] px-6 py-3 text-sm font-semibold text-[var(--color-ink)] transition-colors hover:bg-[var(--color-paper-2)]"
+              className="inline-flex min-h-11 items-center rounded-full border-2 border-[var(--color-ink)] bg-[var(--color-paper)] px-6 py-3 text-sm font-semibold text-[var(--color-ink)] transition-colors hover:bg-[var(--color-paper-2)]"
             >
               {site.hero.ctaSecondary}
             </a>
@@ -115,7 +115,7 @@ export function Hero() {
               })}
         >
           <div className="grid grid-cols-[1fr_0.72fr] gap-3 sm:gap-4">
-            <div className="relative overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-paper-2)] shadow-[0_24px_60px_-32px_oklch(0.3_0.04_150/0.4)] transition-transform duration-300 hover:-translate-y-0.5">
+            <div className="hc-photo relative overflow-hidden rounded-[var(--radius-card)] border-2 border-[var(--color-ink)] bg-[var(--color-paper-2)] transition-transform duration-300 hover:-translate-y-0.5">
               <Image
                 src={site.photo}
                 alt={`${site.ui.photoAlt} ${site.name}`}

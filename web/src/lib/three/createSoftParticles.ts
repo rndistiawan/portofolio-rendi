@@ -27,8 +27,8 @@ export function createSoftParticles(
     typeof window !== "undefined" &&
     window.matchMedia("(max-width: 768px)").matches;
   const count = options.particleCount ?? (isMobile ? 48 : 110);
-  const colorA = options.color ?? "#5f8f72";
-  const colorB = options.colorSecondary ?? "#8fb89a";
+  const colorA = options.color ?? "#c45c26";
+  const colorB = options.colorSecondary ?? "#1e3d32";
 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(48, 1, 0.1, 100);
