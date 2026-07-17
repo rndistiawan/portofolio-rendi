@@ -41,3 +41,14 @@ coverage/
 web/coverage/
 
 docs/_assets_tmp/
+
+# Deploy / MCP temp artifacts
+web/.deploy*
+web/.files-only.json
+web/.full-deploy-args.json
+web/.mcp-deploy-args.json
+web/.vercel-*.json
+web/.vercel-*.cjs
+web/.vercel-deploy*
+web/.vercel/
+web/scripts/pack-deploy.js

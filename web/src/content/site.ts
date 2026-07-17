@@ -47,9 +47,9 @@ export const site = {
   ],
   nav: [
     { label: "Tentang", href: "#tentang" },
+    { label: "Layanan", href: "#layanan" },
     { label: "Pengalaman", href: "#pengalaman" },
     { label: "Proyek", href: "#proyek" },
-    { label: "Keahlian", href: "#keahlian" },
     { label: "Kontak", href: "#kontak" },
   ],
   cta: {
@@ -81,6 +81,75 @@ export const site = {
         body: "Fokus pada posting yang konsisten, bahasa yang jelas, dan mudah ditindaklanjuti audiens.",
       },
     ],
+  },
+  services: {
+    title: "Yang bisa kita kerjakan bareng",
+    intro:
+      "Paket fokus untuk UMKM dan bisnis jasa. Jelas, praktis, tanpa janji angka yang tidak realistis.",
+    items: [
+      {
+        title: "Kelola social media",
+        body: "Rencana konten mingguan, caption, dan posting konsisten di platform yang Anda pakai.",
+        hint: "IG · TikTok · lainnya",
+      },
+      {
+        title: "Copywriting konten",
+        body: "Teks yang mudah dibaca: caption, hook singkat, dan pesan brand yang rapi.",
+        hint: "Copy yang jernih",
+      },
+      {
+        title: "Ide & format konten",
+        body: "Ide visual dan format (feed, reels, story) yang cocok dengan brand dan audiens Anda.",
+        hint: "Perencanaan konten",
+      },
+      {
+        title: "Dasar TikTok Ads",
+        body: "Bantu setup dan pemahaman iklan TikTok sesuai skill yang sudah dipelajari formal.",
+        hint: "Sertifikasi MySkill",
+      },
+    ],
+  },
+  process: {
+    title: "Cara saya bekerja",
+    intro: "Alur sederhana supaya kolaborasi jelas dari awal.",
+    steps: [
+      {
+        step: "01",
+        title: "Brief singkat",
+        body: "Anda ceritakan brand, target, dan channel yang dipakai.",
+      },
+      {
+        step: "02",
+        title: "Ide & arah",
+        body: "Saya usulkan tema konten, tone, dan jadwal yang realistis.",
+      },
+      {
+        step: "03",
+        title: "Eksekusi",
+        body: "Copy, visual sederhana, dan posting / serah terima file sesuai kesepakatan.",
+      },
+      {
+        step: "04",
+        title: "Review",
+        body: "Kita evaluasi apa yang jalan, lalu sesuaikan untuk periode berikutnya.",
+      },
+    ],
+  },
+  platforms: {
+    title: "Tools & channel",
+    intro: "Yang biasa dipakai di pekerjaan digital (bukan daftar klien fiktif).",
+    items: [
+      { name: "TikTok", note: "Konten & Ads" },
+      { name: "Instagram", note: "Feed & story" },
+      { name: "Canva", note: "Visual cepat" },
+      { name: "Copywriting", note: "Caption & hook" },
+      { name: "WhatsApp", note: "Komunikasi klien" },
+      { name: "Office", note: "Admin & jadwal" },
+    ],
+  },
+  quoteBand: {
+    text: "Konten bagus itu yang konsisten dan mudah dipahami, bukan yang kelihatan ramai tanpa arah.",
+    by: "Rendi Setiawan",
   },
   experience: {
     title: "Pengalaman kerja",
