@@ -1,7 +1,19 @@
-import { site } from "@/content/site";
+"use client";
+
+import { useSite } from "@/components/LanguageProvider";
 import { Reveal, Stagger, StaggerItem } from "@/components/animation/Reveal";
 
+function spanClass(index: number, total: number): string {
+  if (index === 0) return "sm:col-span-2 lg:col-span-7";
+  if (index === 1) return "lg:col-span-5";
+  if (total === 5 && index >= 2) return "lg:col-span-4";
+  return "lg:col-span-6";
+}
+
 export function Services() {
+  const site = useSite();
+  const total = site.services.items.length;
+
   return (
     <section
       id="layanan"
@@ -21,21 +33,11 @@ export function Services() {
           </p>
         </Reveal>
 
-        {/* Asymmetric: first card wider, not 4 equal AI cards */}
         <Stagger className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-12">
           {site.services.items.map((item, i) => {
             const wide = i === 0;
             return (
-              <StaggerItem
-                key={item.title}
-                className={
-                  wide
-                    ? "sm:col-span-2 lg:col-span-7"
-                    : i === 1
-                      ? "lg:col-span-5"
-                      : "lg:col-span-6"
-                }
-              >
+              <StaggerItem key={item.title} className={spanClass(i, total)}>
                 <article
                   className={`flex h-full flex-col justify-between rounded-[var(--radius-card)] border border-[var(--color-border)] p-6 sm:p-8 ${
                     wide
@@ -55,7 +57,9 @@ export function Services() {
                     </p>
                     <h3
                       className={`mt-3 font-[family-name:var(--font-display)] text-xl font-semibold sm:text-2xl ${
-                        wide ? "text-[var(--color-on-accent)]" : "text-[var(--color-ink)]"
+                        wide
+                          ? "text-[var(--color-on-accent)]"
+                          : "text-[var(--color-ink)]"
                       }`}
                     >
                       {item.title}

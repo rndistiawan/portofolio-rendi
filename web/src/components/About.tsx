@@ -1,8 +1,12 @@
+"use client";
+
 import Image from "next/image";
-import { site } from "@/content/site";
+import { useSite } from "@/components/LanguageProvider";
 import { Reveal } from "@/components/animation/Reveal";
 
 export function About() {
+  const site = useSite();
+
   return (
     <section
       id="tentang"

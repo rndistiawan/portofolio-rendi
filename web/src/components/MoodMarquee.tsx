@@ -1,21 +1,24 @@
-import { site } from "@/content/site";
+"use client";
+
+import { useSite } from "@/components/LanguageProvider";
 
 export function MoodMarquee() {
+  const site = useSite();
   const items = [...site.marquee, ...site.marquee];
 
   return (
     <div
-      className="relative overflow-hidden border-y border-[var(--color-border)] bg-[var(--color-forest)] py-3.5 text-[var(--color-on-accent)]"
+      className="overflow-hidden border-y border-[var(--color-border)] bg-[var(--color-paper-2)] py-3"
       aria-hidden
     >
-      <div className="marquee-track flex w-max gap-10 whitespace-nowrap">
-        {items.map((item, i) => (
+      <div className="marquee-track flex w-max gap-8 pr-8">
+        {items.map((label, i) => (
           <span
-            key={`${item}-${i}`}
-            className="inline-flex items-center gap-10 text-sm font-medium tracking-wide"
+            key={`${label}-${i}`}
+            className="whitespace-nowrap text-sm font-medium tracking-wide text-[var(--color-ink-soft)]"
           >
-            {item}
-            <span className="h-1 w-1 rounded-full bg-[var(--color-on-accent)]/50" />
+            {label}
+            <span className="ml-8 text-[var(--color-accent)]">·</span>
           </span>
         ))}
       </div>

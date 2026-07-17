@@ -29,8 +29,9 @@ docs/superpowers/  # design specs & plans
 ### Rules
 
 1. **Semua copy** di `web/src/content/site.ts` — jangan hardcode teks panjang di komponen.
-2. **CTA tunggal:** chat WhatsApp (satu intent di seluruh page).
+2. **CTA tunggal:** chat WhatsApp (satu intent di seluruh page), tone soft-sell.
 3. **Honest content:** no invented metrics, fake testimonials, or fake client logos.
+3b. **Copy tone:** **REQUIRED:** Use `soft-selling-portfolio-copy` for all user-facing strings in `site.ts`.
 4. **Motion:** `motion/react` + max 1 GSAP pin; Three.js only ambient particles.
 5. **Vercel:** app root = `web/`.
 

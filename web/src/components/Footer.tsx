@@ -1,9 +1,13 @@
-import { site } from "@/content/site";
+"use client";
+
+import { useSite } from "@/components/LanguageProvider";
 
 // Static year — Cache Components disallows Date.now()/new Date() during prerender
 const YEAR = 2026;
 
 export function Footer() {
+  const site = useSite();
+
   return (
     <footer className="border-t border-[var(--color-border)] py-10">
       <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 sm:flex-row sm:items-center sm:justify-between sm:px-8">

@@ -1,5 +1,7 @@
+"use client";
+
 import Image from "next/image";
-import { site } from "@/content/site";
+import { useSite } from "@/components/LanguageProvider";
 import { Reveal } from "@/components/animation/Reveal";
 
 function ChipRow({
@@ -35,6 +37,8 @@ function ChipRow({
 }
 
 export function Skills() {
+  const site = useSite();
+
   return (
     <section
       id="keahlian"
@@ -64,7 +68,10 @@ export function Skills() {
             </div>
           </Reveal>
 
-          <Reveal className="space-y-8 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-paper)] p-6 sm:p-8 lg:col-span-8" delay={0.08}>
+          <Reveal
+            className="space-y-8 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-paper)] p-6 sm:p-8 lg:col-span-8"
+            delay={0.08}
+          >
             <ChipRow
               title={site.skills.labels.primary}
               items={site.skills.primary}

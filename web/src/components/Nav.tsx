@@ -2,9 +2,11 @@
 
 import { List, X } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
-import { site } from "@/content/site";
+import { useSite } from "@/components/LanguageProvider";
+import { LanguageToggle } from "@/components/LanguageToggle";
 
 export function Nav() {
+  const site = useSite();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -31,7 +33,10 @@ export function Nav() {
           {site.name}
         </a>
 
-        <nav className="hidden items-center gap-0.5 md:flex" aria-label="Utama">
+        <nav
+          className="hidden items-center gap-0.5 md:flex"
+          aria-label={site.ui.navAria}
+        >
           {site.nav.map((item) => (
             <a
               key={item.href}
@@ -41,6 +46,7 @@ export function Nav() {
               {item.label}
             </a>
           ))}
+          <LanguageToggle className="ml-2" />
           <a
             href={site.whatsappUrl}
             target="_blank"
@@ -51,16 +57,19 @@ export function Nav() {
           </a>
         </nav>
 
-        <button
-          type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[var(--color-border)] bg-[var(--color-paper)] text-[var(--color-ink)] md:hidden"
-          aria-expanded={open}
-          aria-controls="mobile-nav"
-          aria-label={open ? "Tutup menu" : "Buka menu"}
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <X size={20} weight="bold" /> : <List size={20} weight="bold" />}
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <LanguageToggle />
+          <button
+            type="button"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[var(--color-border)] bg-[var(--color-paper)] text-[var(--color-ink)]"
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+            aria-label={open ? site.ui.closeMenu : site.ui.openMenu}
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <X size={20} weight="bold" /> : <List size={20} weight="bold" />}
+          </button>
+        </div>
       </div>
 
       {open && (
@@ -68,7 +77,7 @@ export function Nav() {
           id="mobile-nav"
           className="border-t border-[var(--color-border)] bg-[var(--color-paper)] px-4 py-4 md:hidden"
         >
-          <nav className="flex flex-col gap-1" aria-label="Mobile">
+          <nav className="flex flex-col gap-1" aria-label={site.ui.mobileNavAria}>
             {site.nav.map((item) => (
               <a
                 key={item.href}
@@ -86,6 +95,12 @@ export function Nav() {
               className="mt-2 rounded-full bg-[var(--color-accent)] px-4 py-3 text-center font-medium text-[var(--color-on-accent)]"
             >
               {site.cta.whatsappLong}
+            </a>
+            <a
+              href={`mailto:${site.email}`}
+              className="rounded-full border border-[var(--color-border-strong)] px-4 py-3 text-center font-medium text-[var(--color-ink)]"
+            >
+              {site.cta.email}
             </a>
           </nav>
         </div>

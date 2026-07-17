@@ -1,9 +1,13 @@
+"use client";
+
 import Image from "next/image";
-import { ArrowUpRight, EnvelopeSimple, MapPin, Phone } from "@phosphor-icons/react/dist/ssr";
-import { site } from "@/content/site";
+import { ArrowUpRight, EnvelopeSimple, MapPin, Phone } from "@phosphor-icons/react";
+import { useSite } from "@/components/LanguageProvider";
 import { Reveal } from "@/components/animation/Reveal";
 
 export function Contact() {
+  const site = useSite();
+
   return (
     <section
       id="kontak"
@@ -70,7 +74,7 @@ export function Contact() {
                   />
                   <div>
                     <dt className="text-xs font-semibold uppercase tracking-wide text-[var(--color-ink-muted)]">
-                      Email
+                      {site.ui.emailLabel}
                     </dt>
                     <dd className="mt-0.5 break-all">
                       <a
@@ -90,7 +94,7 @@ export function Contact() {
                   />
                   <div>
                     <dt className="text-xs font-semibold uppercase tracking-wide text-[var(--color-ink-muted)]">
-                      WhatsApp
+                      {site.ui.whatsappLabel}
                     </dt>
                     <dd className="mt-0.5">
                       <a
@@ -112,7 +116,7 @@ export function Contact() {
                   />
                   <div>
                     <dt className="text-xs font-semibold uppercase tracking-wide text-[var(--color-ink-muted)]">
-                      Lokasi
+                      {site.ui.locationLabel}
                     </dt>
                     <dd className="mt-0.5 text-[var(--color-ink)]">
                       {site.location}

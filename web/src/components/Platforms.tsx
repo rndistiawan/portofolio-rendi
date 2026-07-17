@@ -1,16 +1,19 @@
-import { site } from "@/content/site";
+"use client";
+
+import { useSite } from "@/components/LanguageProvider";
 import { Reveal } from "@/components/animation/Reveal";
 
 export function Platforms() {
+  const site = useSite();
+
   return (
     <section
-      id="tools"
       className="border-t border-[var(--color-border)] py-16 sm:py-20"
       aria-labelledby="platforms-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
         <Reveal>
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h2
                 id="platforms-heading"
@@ -18,20 +21,21 @@ export function Platforms() {
               >
                 {site.platforms.title}
               </h2>
-              <p className="mt-2 max-w-md text-sm text-[var(--color-ink-soft)] sm:text-base">
+              <p className="mt-2 max-w-md text-sm text-[var(--color-ink-soft)]">
                 {site.platforms.intro}
               </p>
             </div>
-            <ul className="flex flex-wrap gap-2 sm:gap-3">
+            <ul className="flex flex-wrap gap-2 sm:justify-end">
               {site.platforms.items.map((p) => (
                 <li
                   key={p.name}
-                  className="rounded-full border border-[var(--color-border-strong)] bg-[var(--color-paper-2)] px-4 py-2"
+                  className="rounded-full border border-[var(--color-border)] bg-[var(--color-paper-2)] px-4 py-2 text-sm"
                 >
-                  <span className="text-sm font-semibold text-[var(--color-ink)]">
+                  <span className="font-medium text-[var(--color-ink)]">
                     {p.name}
                   </span>
-                  <span className="ml-2 text-xs text-[var(--color-ink-muted)]">
+                  <span className="text-[var(--color-ink-muted)]">
+                    {" · "}
                     {p.note}
                   </span>
                 </li>

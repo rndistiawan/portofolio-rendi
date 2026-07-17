@@ -4,7 +4,7 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import { ArrowUpRight } from "@phosphor-icons/react";
 import { motion, useReducedMotion } from "motion/react";
-import { site } from "@/content/site";
+import { useSite } from "@/components/LanguageProvider";
 
 const HeroCanvas = dynamic(
   () =>
@@ -15,6 +15,7 @@ const HeroCanvas = dynamic(
 const easeOut = [0.16, 1, 0.3, 1] as const;
 
 export function Hero() {
+  const site = useSite();
   const reduce = useReducedMotion();
 
   const item = (delay: number) =>
@@ -32,7 +33,6 @@ export function Hero() {
       className="relative min-h-[100dvh] overflow-x-clip pt-20 pb-12 sm:pt-24 sm:pb-16"
       aria-labelledby="hero-heading"
     >
-      {/* Mood photo wash under particles */}
       <div className="pointer-events-none absolute inset-0 -z-20">
         <Image
           src={site.moods.wash}
@@ -45,7 +45,6 @@ export function Hero() {
         <div className="absolute inset-0 bg-[linear-gradient(180deg,var(--color-paper)_0%,color-mix(in_oklab,var(--color-paper)_75%,transparent)_45%,var(--color-paper)_100%)]" />
       </div>
 
-      {/* Three.js soft particles */}
       <HeroCanvas />
 
       <div className="relative mx-auto grid max-w-7xl items-end gap-10 px-4 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
@@ -70,7 +69,7 @@ export function Hero() {
             {site.role}
           </motion.p>
           <motion.p
-            className="mt-5 max-w-[40ch] text-base leading-relaxed text-[var(--color-ink-soft)] sm:text-lg"
+            className="mt-5 max-w-[42ch] text-base leading-relaxed text-[var(--color-ink-soft)] sm:text-lg"
             {...item(0.24)}
           >
             {site.tagline}
@@ -90,11 +89,17 @@ export function Hero() {
               <ArrowUpRight size={16} weight="bold" />
             </a>
             <a
-              href={site.cv}
-              download
+              href={`mailto:${site.email}`}
               className="inline-flex min-h-11 items-center rounded-full border border-[var(--color-border-strong)] bg-[var(--color-paper)] px-6 py-3 text-sm font-semibold text-[var(--color-ink)] transition-colors hover:bg-[var(--color-paper-2)]"
             >
               {site.hero.ctaSecondary}
+            </a>
+            <a
+              href={site.cv}
+              download
+              className="inline-flex min-h-11 items-center rounded-full px-4 py-3 text-sm font-medium text-[var(--color-ink-soft)] underline-offset-4 hover:underline"
+            >
+              {site.cta.cv}
             </a>
           </motion.div>
         </div>
@@ -113,7 +118,7 @@ export function Hero() {
             <div className="relative overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-paper-2)] shadow-[0_24px_60px_-32px_oklch(0.3_0.04_150/0.4)] transition-transform duration-300 hover:-translate-y-0.5">
               <Image
                 src={site.photo}
-                alt={`Foto ${site.name}`}
+                alt={`${site.ui.photoAlt} ${site.name}`}
                 width={640}
                 height={800}
                 priority

@@ -1,27 +1,29 @@
+"use client";
+
 import Image from "next/image";
-import { site } from "@/content/site";
-import { Reveal } from "@/components/animation/Reveal";
+import { useSite } from "@/components/LanguageProvider";
+import { Reveal, Stagger, StaggerItem } from "@/components/animation/Reveal";
 
 export function Experience() {
+  const site = useSite();
+
   return (
     <section
       id="pengalaman"
-      className="relative overflow-hidden border-t border-[var(--color-border)] bg-[var(--color-paper-2)] py-20 sm:py-28"
+      className="relative border-t border-[var(--color-border)] py-20 sm:py-28"
       aria-labelledby="experience-heading"
     >
-      <div className="pointer-events-none absolute -right-8 top-16 hidden w-48 opacity-40 lg:block xl:w-64">
-        <div className="relative aspect-[3/4] overflow-hidden rounded-[var(--radius-card)]">
-          <Image
-            src={site.moods.bokeh}
-            alt=""
-            fill
-            className="object-cover"
-            sizes="256px"
-          />
-        </div>
+      <div className="pointer-events-none absolute inset-0 -z-10 opacity-[0.12]">
+        <Image
+          src={site.moods.bokeh}
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-8">
         <Reveal>
           <h2
             id="experience-heading"
@@ -29,48 +31,43 @@ export function Experience() {
           >
             {site.experience.title}
           </h2>
-          <p className="mt-3 max-w-xl text-[var(--color-ink-soft)]">
+          <p className="mt-3 max-w-2xl text-[var(--color-ink-soft)]">
             {site.experience.intro}
           </p>
         </Reveal>
 
-        <ol className="mt-14 max-w-3xl space-y-0">
-          {site.experience.items.map((job, i) => (
-            <Reveal key={job.company} delay={i * 0.06}>
-              <li className="relative border-l-2 border-[var(--color-accent-soft)] py-8 pl-8">
-                <span
-                  className="absolute -left-[9px] top-10 h-4 w-4 rounded-full border-2 border-[var(--color-accent)] bg-[var(--color-paper-2)]"
-                  aria-hidden
-                />
-                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                  <p className="text-sm font-medium text-[var(--color-accent-deep)]">
+        <Stagger className="mt-12 space-y-4">
+          {site.experience.items.map((job) => (
+            <StaggerItem key={job.company + job.period}>
+              <article className="rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-paper)]/95 p-6 sm:p-8 backdrop-blur-sm">
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
+                  <div>
+                    <h3 className="font-[family-name:var(--font-display)] text-lg font-semibold text-[var(--color-ink)] sm:text-xl">
+                      {job.company}
+                    </h3>
+                    <p className="text-sm font-medium text-[var(--color-accent-deep)]">
+                      {job.role}
+                    </p>
+                  </div>
+                  <p className="shrink-0 text-sm text-[var(--color-ink-muted)]">
                     {job.period}
                   </p>
-                  {i === 0 && (
-                    <span className="rounded-full bg-[var(--color-accent-soft)] px-2.5 py-0.5 text-xs font-medium text-[var(--color-accent-deep)]">
-                      Aktif
-                    </span>
-                  )}
                 </div>
-                <h3 className="mt-2 font-[family-name:var(--font-display)] text-xl font-semibold text-[var(--color-ink)]">
-                  {job.role}
-                </h3>
-                <p className="mt-1 text-[var(--color-ink-soft)]">{job.company}</p>
-                <ul className="mt-4 space-y-2 text-sm leading-relaxed text-[var(--color-ink-soft)] sm:text-base">
+                <ul className="mt-4 space-y-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
                   {job.bullets.map((b) => (
                     <li key={b} className="flex gap-2">
                       <span
-                        className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-accent)]"
+                        className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[var(--color-accent)]"
                         aria-hidden
                       />
                       <span>{b}</span>
                     </li>
                   ))}
                 </ul>
-              </li>
-            </Reveal>
+              </article>
+            </StaggerItem>
           ))}
-        </ol>
+        </Stagger>
       </div>
     </section>
   );

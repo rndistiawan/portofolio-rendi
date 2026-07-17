@@ -5,12 +5,13 @@ import { useEffect, useRef, useState } from "react";
 import { useReducedMotion } from "motion/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { site } from "@/content/site";
+import { useSite } from "@/components/LanguageProvider";
+import type { SiteContent } from "@/content/site";
 import { Stagger, StaggerItem } from "@/components/animation/Reveal";
 
 gsap.registerPlugin(ScrollTrigger);
 
-type Project = (typeof site.projects.items)[number];
+type Project = SiteContent["projects"]["items"][number];
 
 function ProjectCard({
   project,
@@ -58,6 +59,7 @@ function ProjectCard({
  * Mobile / reduced-motion: static staggered grid (no pin).
  */
 export function ProjectsPin() {
+  const site = useSite();
   const reduce = useReducedMotion();
   const [desktop, setDesktop] = useState(false);
   const wrapRef = useRef<HTMLDivElement>(null);
@@ -136,8 +138,7 @@ export function ProjectsPin() {
           ))}
           <div className="flex w-[min(40vw,280px)] shrink-0 items-center pr-8">
             <p className="max-w-[16rem] text-sm leading-relaxed text-[var(--color-ink-soft)]">
-              Scroll untuk melihat semua fokus kerja. Siap diskusi proyek lewat
-              WhatsApp.
+              {site.contact.body}
             </p>
           </div>
         </div>
