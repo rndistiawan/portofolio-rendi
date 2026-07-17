@@ -1,94 +1,102 @@
-# Design System: Rendi Portfolio — High Contrast Editorial
+# Design System: Rendi Portfolio — Editorial Content Studio
 
 ## 1. Visual Theme & Atmosphere
 
-A **high-contrast editorial portfolio** for a solo freelance digital marketer. Density **4** (gallery-airy with clear blocks), Variance **7** (asymmetric split hero, unequal service cards), Motion **5** (fluid CSS + spring reveals, restrained perpetual marquee).
+A **premium editorial content-studio portfolio** for a solo freelance digital marketer and social media partner. Density **4** (gallery airy with clear blocks), Variance **7** (asymmetric hero + unequal service grid), Motion **5** (spring reveals + restrained marquee).
 
-Atmosphere: **ink on paper with one decisive accent** — like a modern print magazine for services, not a soft pastel wellness brochure. Light surfaces stay bright; text is near-charcoal, never washed grey. Dark band sections (quote, feature card) use deep charcoal-green for punch. Professional, calm, high legibility for client trust.
+Atmosphere: **print studio meets calm service brand** — charcoal ink on warm paper, one copper-ember accent, deep forest punch for dark bands. Imagery shows real work contexts (desk planning, content design flat-lays, wellness calm, soft city light) — never generic purple AI gradients. Professional, scannable, high trust for Indonesian freelance clients.
 
 ## 2. Color Palette & Roles
 
-### Light (default)
-- **Paper Canvas** (#FAFAF8) — Primary page background
-- **Surface Lift** (#FFFFFF) — Cards, nav blur base, elevated panels
-- **Charcoal Ink** (#141816) — Primary text, headings (not pure black)
-- **Graphite Soft** (#3F4541) — Body secondary, taglines
-- **Slate Meta** (#6B736E) — Labels, captions, muted UI chrome
-- **Edge Line** (#D6DBD7) — Default borders, 1px structure
-- **Edge Strong** (#A8B0AA) — Strong borders, secondary buttons
-- **Forest Punch** (#1E3D32) — Inverted bands, wide service card, quote band
-- **On Punch** (#F4F7F5) — Text/icons on forest punch
-- **Accent Ember** (#C45C26) — Single accent: CTAs, focus, active lang toggle (sat < 80%)
-- **Accent Ember Hover** (#A34B1E) — Primary button hover
-- **Accent Whisper** (#F5E6DC) — Soft accent wash, selection, soft chips
-- **Focus Ring** (#C45C26) — Keyboard focus outline
+### Light
+- **Paper Canvas** (#FAFAF8) — Page background
+- **Surface Lift** (#FFFFFF) — Cards, elevated panels
+- **Charcoal Ink** (#141816) — Headings, primary text
+- **Graphite Soft** (#3F4541) — Body secondary
+- **Slate Meta** (#6B736E) — Labels, captions
+- **Edge Line** (#D6DBD7) — Default 1px borders
+- **Edge Strong** (#A8B0AA) — Strong borders
+- **Forest Punch** (#1E3D32) — Quote band, wide service card, marquee
+- **On Punch** (#F4F7F5) — Text on punch surfaces
+- **Accent Ember** (#C45C26) — Single CTA / focus accent (sat < 80%)
+- **Accent Ember Hover** (#A34B1E)
+- **Accent Whisper** (#F5E6DC) — Soft wash / selection
 
-### Dark (prefers-color-scheme)
-- **Night Canvas** (#121514) — Background
-- **Night Surface** (#1A1F1C) — Cards
-- **Snow Ink** (#F2F4F3) — Primary text
-- **Mist Soft** (#B8C0BB) — Secondary text
-- **Accent Ember** (#E07A45) — CTA on dark (still one accent family)
-- **Forest Punch** (#0F241C) — Deep bands
+### Dark
+- Night canvas (#121514), night surface (#1A1F1C), snow ink (#F2F4F3)
+- Accent Ember brightened (#E07A45); Forest Punch deeper (#0F241C)
+- On Punch stays light for contrast on dark bands
 
-**Banned:** purple/neon, pure `#000000`, multi-accent rainbow, oversaturated blues.
+**Banned:** purple/neon, pure `#000`, multi-accent, Inter font.
 
 ## 3. Typography Rules
 
-- **Display / Headlines:** Outfit — track-tight (`-0.03em` to `-0.04em`), weight 600–700, scale via `clamp()`. Hierarchy by weight + ink vs soft, not only size.
-- **Body:** Outfit — relaxed leading (`1.65`), max ~42–65ch for prose.
-- **UI labels / mono meta:** Outfit medium uppercase tracking-wide for tiny labels (step numbers); optional JetBrains Mono only if numeric tables appear later.
-- **Banned:** Inter, Roboto, generic Georgia/Times for display.
+- **Display:** Outfit, bold 600–700, tracking `-0.03em` to `-0.04em`, `clamp()` scale
+- **Body:** Outfit, leading ~1.65, max ~42–65ch
+- **Labels:** small uppercase or medium tracking for step numbers
+- **Banned:** Inter, generic system UI as brand face
 
 ## 4. Component Stylings
 
-* **Primary buttons:** Pill radius (`999px`). Fill Accent Ember, text On-paper light. Hover darken. Active: `translateY(1px)`. No outer glow. Min height 44px.
-* **Secondary buttons:** Transparent/paper fill, Edge Strong border, Charcoal Ink text. Hover Surface Lift / paper-2.
-* **Ghost links:** Underline on hover only; Graphite Soft → Charcoal Ink.
-* **Cards:** Radius ~1.25–1.5rem. Border Edge Line. White or paper-2 fill. Shadow: soft charcoal tinted, low opacity (`0 18px 50px -32px` oklch charcoal). Wide feature card uses Forest Punch + On Punch text for contrast block.
-* **Chips / skills:** Solid accent or strong border; high contrast text.
-* **Nav:** Fixed; on scroll, paper 90% + blur + Edge Line bottom. CTA = Accent Ember.
-* **Language toggle:** Inactive = muted; active = Accent Ember fill + light text.
-* **Images:** Rounded cards, clear border; profile photo is the hero visual weight (right column), not overlapping type.
-* **Loaders:** Skeleton bars matching layout; no spinner rings.
-* **Focus:** 2px Focus Ring, offset 2px.
+* **Primary CTA:** Pill, Ember fill, light text, min 44px, active `translateY(1px)`, soft ember shadow only (no neon glow)
+* **Secondary:** Ink or strong border outline on paper
+* **Cards:** radius 1.35rem; white/paper-2; charcoal-tinted soft shadow; punch cards use Forest + On Punch
+* **Image tiles:** full-bleed cover, border, hover scale 1.03 transform only; captions optional below for gallery
+* **Nav:** fixed; scroll → paper blur + ink border bottom
+* **Lang toggle:** active = Ember fill
+* **Profile photo:** heavy visual weight, ink border 2px, photo shadow
 
 ## 5. Layout Principles
 
-- Max width ~80rem (7xl), horizontal padding `1rem` → `2rem`.
-- Hero: **asymmetric split** (copy left ~1.05, media right ~0.95) — never centered stack on desktop.
-- Services: asymmetric grid (first card wide Forest Punch; others unequal spans) — **no** three equal cards.
-- Sections: top border Edge Line; vertical rhythm `py-20` / `sm:py-28`.
-- Mobile `<768px`: single column; no horizontal page scroll; touch targets ≥44px.
-- Full viewport sections: `min-h-[100dvh]`, never `h-screen`.
+- Max-width 7xl (~80rem); section `py-20` / `sm:py-28`
+- Hero asymmetric split (copy | photo mosaic)
+- Services asymmetric 12-col (wide first card)
+- Visual break: bento 2×4-ish auto rows — **not** 3 equal cards
+- Mobile single column; `min-h-[100dvh]` for hero
 
 ## 6. Motion & Interaction
 
-- Page reveals: opacity + Y transform; ease `[0.16, 1, 0.3, 1]`; spring-like, not linear.
-- Stagger lists ~70ms cascade.
-- Marquee: infinite transform only.
-- Particles (hero): low-opacity ambient; pause on reduced-motion / offscreen.
-- Animate only `transform` and `opacity`.
+- Reveal: opacity + Y; ease `[0.16, 1, 0.3, 1]`
+- Stagger ~70ms
+- Marquee transform-only infinite
+- Particles ambient ember/forest, reduced-motion off
 
-## 7. Anti-Patterns (Banned)
+## 7. Image Direction (mood assets)
 
-- No emojis in UI chrome
-- No Inter / system UI as brand face
-- No pure black `#000000`
-- No neon / purple glow buttons
-- No “Scroll to explore” / bouncing chevrons
-- No 3 equal feature cards
-- No centered hero on desktop
-- No AI copy (“Elevate”, “Seamless”, “Unleash”)
-- No fake metrics (`+47%`, `99.9%`)
-- No overlapping text on photos
-- No custom cursors
+| Asset | Role on site | Subject |
+|-------|----------------|---------|
+| `mood-desk.jpg` | Projects wide, visual break hero tile | Content desk: laptop + phone social grid + calendar |
+| `mood-linen.jpg` | Projects half, about/skills | Brand moodboard / content design flat-lay |
+| `mood-leaves.jpg` | Projects half, about | Calm wellness/green — clinic service empathy |
+| `mood-bokeh.jpg` | Experience bg, about | Soft city/workspace bokeh — freelance evenings |
+| `mood-wash.jpg` | Hero underlay, contact wash | Abstract warm paper texture |
+| `rendi-profile-28.jpg` | Hero portrait | Keep face consistent; do not replace casually |
 
-## 8. Implementation Map (this repo)
+### Free stock reference libraries (for future shoots/replacements)
 
-| Token / area | File |
-|--------------|------|
-| CSS variables | `web/src/app/globals.css` |
-| Font load | `web/src/app/layout.tsx` → Outfit |
-| Components | Consume `var(--color-*)` only |
-| Copy SSOT | `web/src/content/id.ts` / `en.ts` (unchanged by visual pass) |
+- [Unsplash — Social media](https://unsplash.com/s/photos/social-media)
+- [Unsplash — Content creator](https://unsplash.com/s/photos/content-creator)
+- [Unsplash — Moodboard](https://unsplash.com/s/photos/moodboard)
+- [Unsplash — Campaign Creators](https://unsplash.com/@campaign_creators)
+- Prefer warm neutrals + desk/device stills; avoid neon SaaS screenshots and stock “handshake” clichés
+
+## 8. Anti-Patterns (Banned)
+
+- Emojis in UI chrome
+- Inter / pure black / purple neon glows
+- “Scroll to explore” / bouncing chevrons
+- 3 equal feature cards
+- Centered hero on desktop
+- AI copy clichés (Elevate, Seamless, Unleash)
+- Fake metrics; broken Unsplash hotlinks in production (use local `/assets`)
+- Overlapping text on photos
+
+## 9. Implementation Map
+
+| Area | Path |
+|------|------|
+| Tokens | `web/src/app/globals.css` |
+| Font | `web/src/app/layout.tsx` → Outfit |
+| Mood files | `web/public/assets/mood-*.jpg` |
+| Mood paths | `web/src/content/site.ts` → `moods` |
+| Sections | `web/src/components/*` |
