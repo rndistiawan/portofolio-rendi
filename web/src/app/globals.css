@@ -138,3 +138,21 @@ button:focus-visible {
 .hc-photo {
   box-shadow: var(--shadow-photo);
 }
+
+/* Alternating section rhythm */
+.section-band {
+  position: relative;
+}
+
+/* Soft mesh glow for dark bands */
+.mesh-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 60% 50% at 80% 0%,
+    color-mix(in srgb, var(--color-accent) 22%, transparent),
+    transparent 70%
+  );
+}
