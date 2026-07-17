@@ -1,5 +1,6 @@
 import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
+import { ContentStudio } from "@/components/ContentStudio";
 import { Experience } from "@/components/Experience";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
@@ -23,6 +24,7 @@ export default function Home() {
         <MoodMarquee />
         <About />
         <Services />
+        <ContentStudio />
         <Process />
         <Platforms />
         <Experience />

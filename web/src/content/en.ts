@@ -146,6 +146,32 @@ export const en: SiteCopy = {
       { name: "WhatsApp", note: "Client chat" },
     ],
   },
+  studio: {
+    eyebrow: "Content studio",
+    title: "A content workspace feel",
+    intro:
+      "Visuals that mirror how I work: shape formats, prep visuals & short video, then keep a clean posting rhythm.",
+    formatLabel: "Content formats",
+    formats: ["Feed", "Reels", "Story", "Carousel"],
+    toolLabel: "Daily tools",
+    tools: ["Canva", "CapCut", "TikTok", "Instagram"],
+    calendarLabel: "Content plan (sample)",
+    days: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    dayHints: ["Feed", "Reels", "Story", "Feed", "Reels", "—", "Story"],
+    phoneLabel: "Feed mock",
+    phoneCaption: "Illustrative content direction — not client metrics.",
+    paletteLabel: "Brand palette",
+  },
+  visualBreak: {
+    eyebrow: "Visual",
+    title: "Work & content atmosphere",
+    tiles: [
+      { key: "desk", label: "Content desk" },
+      { key: "linen", label: "Brand mood" },
+      { key: "leaves", label: "Calm service" },
+      { key: "bokeh", label: "Studio light" },
+    ],
+  },
   quoteBand: {
     text: "Effective content feels clear and consistent—not loud for a moment without direction.",
     by: "Rendi Setiawan",

@@ -53,6 +53,27 @@ export type SiteCopy = {
     intro: string;
     items: readonly { name: string; note: string }[];
   };
+  /** Content-studio visual board — abstract, no fake client metrics */
+  studio: {
+    title: string;
+    intro: string;
+    eyebrow: string;
+    formatLabel: string;
+    formats: readonly string[];
+    toolLabel: string;
+    tools: readonly string[];
+    calendarLabel: string;
+    days: readonly string[];
+    dayHints: readonly string[];
+    phoneLabel: string;
+    phoneCaption: string;
+    paletteLabel: string;
+  };
+  visualBreak: {
+    eyebrow: string;
+    title: string;
+    tiles: readonly { key: "desk" | "linen" | "leaves" | "bokeh"; label: string }[];
+  };
   quoteBand: { text: string; by: string };
   experience: {
     title: string;

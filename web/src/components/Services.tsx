@@ -1,5 +1,13 @@
 "use client";
 
+import type { Icon } from "@phosphor-icons/react";
+import {
+  ChatText,
+  Megaphone,
+  PaintBrush,
+  ShareNetwork,
+  VideoCamera,
+} from "@phosphor-icons/react";
 import { useSite } from "@/components/LanguageProvider";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Stagger, StaggerItem } from "@/components/animation/Reveal";
@@ -11,7 +19,6 @@ function spanClass(index: number, total: number): string {
   return "lg:col-span-6";
 }
 
-/** Card surface variety — keeps grid asymmetric, avoids 5 identical cards */
 function cardSurface(i: number, wide: boolean): string {
   if (wide) {
     return "border-[var(--color-forest)] bg-[var(--color-forest)]";
@@ -24,6 +31,14 @@ function cardSurface(i: number, wide: boolean): string {
   ];
   return variants[(i - 1) % variants.length];
 }
+
+const serviceIcons: Icon[] = [
+  Megaphone,
+  ShareNetwork,
+  ChatText,
+  PaintBrush,
+  VideoCamera,
+];
 
 export function Services() {
   const site = useSite();
@@ -48,6 +63,7 @@ export function Services() {
           {site.services.items.map((item, i) => {
             const wide = i === 0;
             const surface = cardSurface(i, wide);
+            const Icon = serviceIcons[i] ?? Megaphone;
             return (
               <StaggerItem key={item.title} className={spanClass(i, total)}>
                 <article
@@ -59,17 +75,42 @@ export function Services() {
                       aria-hidden
                     />
                   ) : null}
+                  {/* Abstract content-grid mark for marketing feel */}
+                  <div
+                    className={`pointer-events-none absolute -bottom-6 -right-4 opacity-[0.12] ${
+                      wide ? "text-[var(--color-on-forest)]" : "text-[var(--color-ink)]"
+                    }`}
+                    aria-hidden
+                  >
+                    <svg width="140" height="100" viewBox="0 0 140 100" fill="currentColor">
+                      <rect x="8" y="12" width="36" height="48" rx="6" />
+                      <rect x="52" y="12" width="36" height="28" rx="6" />
+                      <rect x="96" y="12" width="36" height="36" rx="6" />
+                      <rect x="52" y="48" width="80" height="32" rx="6" />
+                    </svg>
+                  </div>
                   <div className="relative">
                     <div className="flex items-start justify-between gap-3">
-                      <p
-                        className={`text-xs font-bold uppercase tracking-[0.16em] ${
-                          wide
-                            ? "text-[var(--color-on-forest)]"
-                            : "text-[var(--color-accent-deep)]"
-                        }`}
-                      >
-                        {item.hint}
-                      </p>
+                      <div className="flex items-center gap-3">
+                        <span
+                          className={`flex h-10 w-10 items-center justify-center rounded-xl ${
+                            wide
+                              ? "bg-[var(--color-on-forest)]/15 text-[var(--color-on-forest)]"
+                              : "bg-[var(--color-accent-soft)] text-[var(--color-accent-deep)]"
+                          }`}
+                        >
+                          <Icon size={20} weight="bold" />
+                        </span>
+                        <p
+                          className={`text-xs font-bold uppercase tracking-[0.16em] ${
+                            wide
+                              ? "text-[var(--color-on-forest)]"
+                              : "text-[var(--color-accent-deep)]"
+                          }`}
+                        >
+                          {item.hint}
+                        </p>
+                      </div>
                       <span
                         className={`font-[family-name:var(--font-display)] text-2xl font-bold tabular-nums ${
                           wide

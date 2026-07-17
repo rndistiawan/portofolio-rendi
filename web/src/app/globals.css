@@ -139,6 +139,25 @@ button:focus-visible {
   box-shadow: var(--shadow-photo);
 }
 
+/* Content studio phone mock */
+.studio-phone__bezel {
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--color-ink) 96%, #3a4540) 0%,
+    var(--color-ink) 100%
+  );
+}
+
+.studio-section {
+  background:
+    radial-gradient(
+      900px 420px at 12% 20%,
+      color-mix(in srgb, var(--color-accent-soft) 70%, transparent),
+      transparent 70%
+    ),
+    var(--color-paper);
+}
+
 /* Safe contrast pairs */
 .bg-punch {
   background-color: var(--color-forest);

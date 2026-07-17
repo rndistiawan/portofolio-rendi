@@ -146,6 +146,32 @@ export const id: SiteCopy = {
       { name: "WhatsApp", note: "Komunikasi" },
     ],
   },
+  studio: {
+    eyebrow: "Content studio",
+    title: "Seperti ruang kerja konten",
+    intro:
+      "Visual yang mewakili cara saya bekerja: merancang format, menyiapkan visual & video, lalu menjaga ritme posting yang rapi.",
+    formatLabel: "Format konten",
+    formats: ["Feed", "Reels", "Story", "Carousel"],
+    toolLabel: "Tools harian",
+    tools: ["Canva", "CapCut", "TikTok", "Instagram"],
+    calendarLabel: "Rencana konten (contoh)",
+    days: ["Sen", "Sel", "Rab", "Kam", "Jum", "Sab", "Min"],
+    dayHints: ["Feed", "Reels", "Story", "Feed", "Reels", "—", "Story"],
+    phoneLabel: "Mock feed",
+    phoneCaption: "Ilustrasi arah konten — bukan contoh metrik klien.",
+    paletteLabel: "Palet brand",
+  },
+  visualBreak: {
+    eyebrow: "Visual",
+    title: "Suasana kerja & konten",
+    tiles: [
+      { key: "desk", label: "Meja konten" },
+      { key: "linen", label: "Mood brand" },
+      { key: "leaves", label: "Layanan tenang" },
+      { key: "bokeh", label: "Cahaya studio" },
+    ],
+  },
   quoteBand: {
     text: "Konten yang efektif terasa jelas dan konsisten—bukan ramai sesaat tanpa arah.",
     by: "Rendi Setiawan",

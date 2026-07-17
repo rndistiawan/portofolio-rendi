@@ -170,6 +170,23 @@ export function Hero() {
               Digital Marketing
             </p>
           </div>
+
+          <div className="absolute -right-2 top-6 hidden flex-col gap-1.5 sm:flex lg:-right-4">
+            {["Feed", "Reels", "Story"].map((label, i) => (
+              <span
+                key={label}
+                className={`rounded-full px-3 py-1 text-[10px] font-bold tracking-wide shadow-[var(--shadow-card)] ${
+                  i === 1
+                    ? "bg-[var(--color-accent)] text-[var(--color-on-accent)]"
+                    : i === 0
+                      ? "bg-[var(--color-forest)] text-[var(--color-on-forest)]"
+                      : "border border-[var(--color-border-strong)] bg-[var(--color-paper)] text-[var(--color-ink)]"
+                }`}
+              >
+                {label}
+              </span>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>
