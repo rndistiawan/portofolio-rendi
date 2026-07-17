@@ -11,7 +11,9 @@ description: Use when writing or rewriting portfolio, freelance landing, or pers
 
 **Core principle:** Show how you work and who you help; let the reader decide. One calm CTA is enough.
 
-**Portfolio value principle:** Every section answers *“What does the client need → what do they get from me?”* Soft tone never drops this clarity.
+**Portfolio value principle:** Clarity of offer and outcome without meta sales language. Professional portfolios *show* value; they rarely say “ini portofolio / nilai jual saya”.
+
+**Professional tone principle:** Short, confident, scannable. No self-referential pitch (“website ini adalah tempat saya…”). No repeated “Butuh X? Anda dapat Y” on every card.
 
 ## When to Use
 
@@ -54,13 +56,22 @@ Every section of portfolio copy MUST land in this shape:
 
 | Section | Soft recipe |
 |---------|-------------|
-| **Tagline** | This is my portfolio + what the client gets (clarity, tidy feed, ready content). No CTA. |
-| **About** | Own the site as portfolio → need you meet → background that proves reliability. |
-| **Services** | Each card: *Butuh X?* → *Anda dapat Y.* Hint = outcome label. No “order now”. |
-| **Process** | How the client gets the outcome (need → match → deliver → review). |
-| **Projects** | Frame as “need answered”, not vanity. Honest about proof limits. |
-| **Experience** | Role honest; bullets = task + value client feels, no fake metrics. |
-| **Contact** | Invite them to name the need; calm WA/email. |
+| **Tagline** | What you do + outcome in one calm sentence. No “this is my portfolio”. No CTA. |
+| **About** | Who / who you help / background that proves reliability. 2–3 short paragraphs. |
+| **Services** | Clean titles + scope. Hint = category, not “what you get:”. No sales Q&A formula. |
+| **Process** | Brief → direction → delivery → review. Professional labels. |
+| **Projects** | Selected focus, honest limits. No “kebutuhan:” hard-sell framing. |
+| **Experience** | Role + factual bullets. Don’t pitch freelance in every line. |
+| **Contact** | Short: project type + how to reach. Calm. |
+
+### Professional portfolio bans (amateur tells)
+
+- “Ini portofolio saya / website ini adalah…”
+- “Nilai jual:” as section titles
+- “Yang klien dapat:” / “Butuh X? Anda dapat Y” on every service
+- “Soft selling” named in user-facing copy
+- Overlong taglines that explain the whole site
+- Experience bullets that sell instead of stating duties
 
 ### Client value map (Rendi portfolio)
 

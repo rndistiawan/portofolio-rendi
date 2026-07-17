@@ -9,13 +9,13 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Rendi Setiawan | Portofolio Digital Marketing & Social Media",
+  title: "Rendi Setiawan | Digital Marketing & Social Media",
   description:
-    "Portofolio Rendi Setiawan. Nilai jual untuk klien: pesan brand lebih jelas, feed rapi, konten siap tayang (copy, desain, video). Freelance solo, Jakarta Timur.",
+    "Portofolio Rendi Setiawan — freelance digital marketing dan social media: content planning, copywriting, desain, dan edit video. Jakarta Timur.",
   openGraph: {
-    title: "Rendi Setiawan | Digital Marketing & Social Media Portfolio",
+    title: "Rendi Setiawan | Digital Marketing & Social Media",
     description:
-      "Portfolio of Rendi Setiawan. Client value: clearer brand message, tidier feed, ready-to-post content. Solo freelance, East Jakarta.",
+      "Freelance digital marketing and social media: content planning, copywriting, design, and short video. East Jakarta.",
     locale: "id_ID",
     type: "website",
   },

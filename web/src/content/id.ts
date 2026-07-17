@@ -1,30 +1,30 @@
 import type { SiteCopy } from "./types";
 
 /**
- * Portofolio Rendi — soft selling + nilai jual klien.
- * Setiap section menjawab: "Klien butuh apa → dapat apa dari Rendi?"
+ * Portofolio profesional Rendi — calm, clear, scannable.
+ * Inspired by strong freelance portfolios: short claim, honest scope, soft CTA.
  */
 export const id: SiteCopy = {
   role: "Digital Marketing · Social Media · Freelance",
   location: "Jakarta Timur",
   tagline:
-    "Portofolio saya. Di sini Anda bisa melihat apa yang saya tawarkan — dan apa yang Anda dapat: pesan brand yang lebih jelas, feed yang lebih rapi, konten yang siap tayang, dan teman kerja yang bisa diandalkan tanpa drama jualan.",
+    "Membantu brand tampil rapi di social media — dari arah konten dan copy, hingga desain, video singkat, dan ritme posting yang konsisten.",
   whatsappPrefill:
-    "Halo Rendi, saya lihat portofolio Anda. Saya ingin ceritakan kebutuhan digital marketing / medsos saya — boleh kita sesuaikan apa yang paling saya butuhkan?",
+    "Halo Rendi, saya melihat portofolio Anda. Boleh saya ceritakan kebutuhan digital marketing / social media saya?",
   hero: {
-    availability: "Jakarta Timur · Freelance solo · Portofolio & penawaran",
-    ctaPrimary: "Hubungi di WhatsApp",
-    ctaSecondary: "Kirim email",
+    availability: "Jakarta Timur · Open for freelance",
+    ctaPrimary: "WhatsApp",
+    ctaSecondary: "Email",
   },
   marquee: [
-    "Pesan brand jelas",
-    "Feed lebih rapi",
-    "Konten siap tayang",
-    "Ritme posting",
-    "Copy yang jernih",
-    "Desain visual",
+    "Digital marketing",
+    "Social media",
+    "Copywriting",
+    "Desain konten",
     "Edit video",
-    "Pendekatan tenang",
+    "TikTok Ads",
+    "Content planning",
+    "Brand voice",
   ],
   nav: [
     { label: "Tentang", href: "#tentang" },
@@ -34,10 +34,10 @@ export const id: SiteCopy = {
     { label: "Kontak", href: "#kontak" },
   ],
   cta: {
-    short: "Hubungi",
+    short: "Kontak",
     whatsapp: "WhatsApp",
-    whatsappLong: "Hubungi di WhatsApp",
-    email: "Gmail",
+    whatsappLong: "Chat WhatsApp",
+    email: "Email",
     cv: "Unduh CV",
     backTop: "Kembali ke atas",
   },
@@ -55,116 +55,115 @@ export const id: SiteCopy = {
     mobileNavAria: "Menu seluler",
   },
   about: {
-    title: "Ini portofolio saya",
+    title: "Tentang",
     paragraphs: [
-      "Saya Rendi Setiawan — freelance solo digital marketing & social media. Website ini adalah tempat saya memperkenalkan diri, cara kerja, dan nilai jual saya: membantu Anda mendapatkan kehadiran online yang rapi, mudah dipahami, dan realistis dijalankan.",
-      "Kalau Anda capek pegang medsos sendiri, bingung pesan brand, atau butuh konten (copy, desain, video singkat) yang siap diunggah — itu ruang di mana saya bisa mendampingi. Bukan janji angka palsu; fokus pada kebutuhan nyata Anda.",
-      "Latar Leader Klinik (wellness/HBOT) melatih saya memimpin alur, berkomunikasi jelas, dan menyelesaikan kerja sampai beres. Latar lapangan (VSAT, EV) melatih ketelitian. Itu yang saya bawa ke kolaborasi freelance.",
+      "Saya Rendi Setiawan, freelance digital marketing dan social media di Jakarta Timur. Saya mendampingi brand—terutama bisnis jasa dan skala kecil—merawat kehadiran online agar pesan lebih jelas dan eksekusi konten lebih rapi.",
+      "Lingkup kerja saya mencakup perencanaan konten, copywriting, desain visual sederhana, edit video pendek, serta pengelolaan posting. Saya fokus pada hasil yang realistis: konsistensi dan kejelasan, bukan klaim angka yang tidak bisa dibuktikan.",
+      "Sebagai Leader Klinik di layanan wellness/HBOT, saya terbiasa memimpin alur kerja, berkomunikasi dengan jelas, dan menyelesaikan tugas sampai tuntas. Latar teknis di lapangan (VSAT dan kendaraan listrik) memperkuat ketelitian yang sama saya bawa ke pekerjaan digital.",
     ],
     values: [
       {
-        title: "Yang Anda butuhkan",
-        body: "Kejelasan dulu: apa yang ingin terasa lebih baik di medsos? Kita cocokkan kebutuhan itu dengan layanan yang relevan — bukan paket generik.",
+        title: "Fokus manfaat",
+        body: "Setiap keputusan konten diarahkan pada kejelasan pesan dan kehadiran brand yang mudah dipahami audiens.",
       },
       {
-        title: "Yang Anda dapat",
-        body: "Pesan lebih jernih, tampilan lebih rapi, ritme posting yang bisa diikuti, dan file/konten yang siap dipakai — dengan komunikasi langsung ke saya.",
+        title: "Komunikasi langsung",
+        body: "Freelance solo berarti Anda berkomunikasi langsung dengan orang yang mengerjakan—tanpa rantai panjang.",
       },
       {
-        title: "Cara saya bekerja",
-        body: "Pendekatan tenang: dengar → arah → eksekusi → review. Soft selling: Anda memutuskan; saya hadir sebagai partner, bukan pressure-close.",
+        title: "Ide sampai file siap",
+        body: "Bukan hanya arahan: copy, visual, video singkat, dan serah terima file dapat dijalankan sesuai kesepakatan.",
       },
     ],
   },
   services: {
-    title: "Nilai jual: apa yang bisa Anda dapat",
+    title: "Layanan",
     intro:
-      "Setiap layanan di bawah ini menjawab kebutuhan klien yang sering muncul. Utamanya digital marketing; desain dan edit video ikut agar konten tidak mandek di ide. Harga dibicarakan setelah kita cocok — tanpa daftar harga di sini.",
+      "Lingkup kerja utama di digital marketing dan social media. Desain dan edit video mendukung agar konten siap dipublikasikan. Detail kolaborasi dibicarakan setelah brief singkat.",
     items: [
       {
         title: "Digital marketing",
-        body: "Butuh arah, bukan coba-coba? Anda dapat kerangka pesan, channel, dan konten yang mendukung tujuan bisnis — langkahnya realistis dan bisa diikuti.",
-        hint: "Yang klien dapat: arah jelas",
+        body: "Menyusun arah pesan, channel, dan konten agar upaya digital terasa terarah dan selaras dengan tujuan brand.",
+        hint: "Strategi & eksekusi",
       },
       {
-        title: "Kelola social media",
-        body: "Capek pegang feed sendiri? Anda dapat rencana konten, caption, dan ritme posting di platform yang dipakai — supaya brand tetap aktif tanpa Anda sendirian.",
-        hint: "Yang klien dapat: medsos terurus",
+        title: "Social media management",
+        body: "Perencanaan konten, caption, dan jadwal posting di platform yang Anda gunakan—supaya kehadiran brand tetap aktif dan teratur.",
+        hint: "Instagram · TikTok",
       },
       {
-        title: "Copywriting konten",
-        body: "Pesan brand terasa acak? Anda dapat teks yang mudah dibaca: caption, hook, dan kalimat yang membantu audiens paham manfaat Anda.",
-        hint: "Yang klien dapat: copy jernih",
+        title: "Copywriting",
+        body: "Caption, hook, dan teks konten yang ringkas, mudah dibaca, dan memperkuat pesan brand.",
+        hint: "Teks konten",
       },
       {
-        title: "Desain visual",
-        body: "Feed terasa berantakan? Anda dapat visual sederhana (Canva) yang rapi dan selaras identitas — siap dipasang di post.",
-        hint: "Yang klien dapat: tampilan rapi",
+        title: "Desain konten",
+        body: "Visual feed dan aset sederhana (Canva) agar tampilan rapi dan selaras identitas brand.",
+        hint: "Visual",
       },
       {
-        title: "Edit video singkat",
-        body: "Ada rekaman tapi belum siap unggah? Anda dapat video pendek (reels / TikTok) yang sudah dipotong, dirapikan, dan punya alur jelas.",
-        hint: "Yang klien dapat: video siap tayang",
+        title: "Edit video pendek",
+        body: "Editing reels/TikTok: potong, rapikan alur, dan siapkan file yang siap diunggah.",
+        hint: "Short-form video",
       },
     ],
   },
   process: {
-    title: "Cara Anda mendapatkan hasilnya",
-    intro:
-      "Alur sederhana agar kebutuhan Anda terbaca dulu, baru dikerjakan — tanpa tekanan di pesan pertama.",
+    title: "Cara kerja",
+    intro: "Proses singkat dan transparan dari brief hingga review.",
     steps: [
       {
         step: "01",
-        title: "Ceritakan kebutuhan",
-        body: "Brand, tujuan, dan apa yang paling ingin dirapikan. Di sini saya dengar dulu.",
+        title: "Brief",
+        body: "Anda menjelaskan brand, tujuan, dan channel yang dipakai.",
       },
       {
         step: "02",
-        title: "Cocokkan nilai jual",
-        body: "Kita pilih layanan yang relevan: apa yang benar-benar Anda butuh, bukan semua sekaligus.",
+        title: "Arah",
+        body: "Saya usulkan tema, tone, format, dan lingkup kerja yang realistis.",
       },
       {
         step: "03",
-        title: "Kerjakan & serahkan",
-        body: "Copy, desain, video, posting / file — sesuai kesepakatan, dengan update yang jelas.",
+        title: "Eksekusi",
+        body: "Copy, visual, video, posting, atau serah file sesuai kesepakatan.",
       },
       {
         step: "04",
-        title: "Review manfaat",
-        body: "Kita cek apa yang sudah terasa lebih baik, lalu sesuaikan periode berikutnya.",
+        title: "Review",
+        body: "Kita evaluasi hasil dan sesuaikan untuk periode berikutnya.",
       },
     ],
   },
   platforms: {
     title: "Tools & channel",
-    intro: "Yang biasa dipakai di pekerjaan digital (bukan daftar klien fiktif).",
+    intro: "Platform dan tools yang biasa dipakai dalam pekerjaan.",
     items: [
       { name: "TikTok", note: "Konten & Ads" },
       { name: "Instagram", note: "Feed & reels" },
       { name: "Canva", note: "Desain visual" },
-      { name: "Edit video", note: "Konten pendek" },
+      { name: "Edit video", note: "Short-form" },
       { name: "Copywriting", note: "Caption & hook" },
       { name: "WhatsApp", note: "Komunikasi" },
     ],
   },
   quoteBand: {
-    text: "Portofolio yang berguna bukan yang paling ramai janji — tapi yang membuat klien paham: ini yang saya butuh, dan ini yang bisa saya dapat.",
+    text: "Konten yang efektif terasa jelas dan konsisten—bukan ramai sesaat tanpa arah.",
     by: "Rendi Setiawan",
   },
   experience: {
-    title: "Pengalaman kerja",
+    title: "Pengalaman",
     intro:
-      "Riwayat yang membentuk nilai jual saya untuk klien: bisa memimpin layanan, teliti di operasional, andal di eksekusi digital.",
+      "Latar yang membentuk cara saya bekerja: kepemimpinan layanan, ketelitian operasional, dan eksekusi digital.",
     items: [
       {
         company: "Salama Wellness Center · Klinik HBOT",
         role: "Leader Klinik",
         period: "Sep 2023 - Sekarang",
         bullets: [
-          "Memimpin alur layanan harian klinik wellness/HBOT: koordinasi tim, jadwal pasien, dan standar pelayanan — bekal leadership yang klien rasakan sebagai komunikasi rapi dan kerja yang selesai.",
-          "Menjaga kualitas komunikasi frontline: menyambut, menjelaskan, follow-up — sama seperti mendampingi klien freelance dengan bahasa yang jelas.",
-          "Mengatur admin, dokumen, dan prioritas harian agar operasional tidak macet — pola yang sama untuk jadwal konten dan serah file.",
-          "Mengelola kehadiran digital klinik agar selaras layanan nyata — nilai jual ke Anda: konten yang rapi, konsisten, dan berorientasi manfaat, bukan hiasan kosong.",
+          "Memimpin operasional harian layanan wellness/HBOT: koordinasi tim, penjadwalan, dan standar pelayanan.",
+          "Menjaga kualitas komunikasi dengan pasien: sambutan, penjelasan layanan, dan follow-up yang jelas.",
+          "Mengelola administrasi, dokumentasi, dan prioritas tugas agar alur kerja tetap stabil.",
+          "Mengurus kehadiran digital klinik (konten dan media sosial) agar selaras dengan layanan di lapangan.",
         ],
       },
       {
@@ -172,8 +171,8 @@ export const id: SiteCopy = {
         role: "Support Teknisi Kendaraan Listrik (Magang)",
         period: "Jan 2023 - Agu 2023",
         bullets: [
-          "Membantu perakitan kelistrikan pada proyek bajaj listrik — melatih ketelitian dan tanggung jawab tugas.",
-          "Bekerja bersama tim untuk instalasi dan pemeliharaan — bekal kolaborasi yang saya bawa ke proyek konten.",
+          "Membantu perakitan kelistrikan pada proyek bajaj listrik.",
+          "Berkolaborasi dengan tim pada instalasi dan pemeliharaan teknologi kendaraan listrik.",
         ],
       },
       {
@@ -181,26 +180,26 @@ export const id: SiteCopy = {
         role: "Teknisi VSAT (Magang)",
         period: "Agu 2022 - Des 2022",
         bullets: [
-          "Membantu instalasi dan pemeliharaan jaringan satelit VSAT di lapangan — problem solving di kondisi nyata.",
-          "Berkolaborasi troubleshooting agar sistem stabil — kebiasaan “selesai sampai beres” untuk klien.",
+          "Membantu instalasi dan pemeliharaan jaringan satelit VSAT di lapangan.",
+          "Berkolaborasi dalam troubleshooting untuk menjaga stabilitas sistem.",
         ],
       },
     ],
   },
   projects: {
-    title: "Bukti arah kerja (untuk kebutuhan klien)",
+    title: "Fokus kerja",
     intro:
-      "Tiga sudut yang menjawab kebutuhan klien. Jujur: tanpa klaim angka yang tidak bisa ditunjukkan.",
+      "Tiga sudut pengalaman yang relevan bagi klien. Tanpa klaim metrik yang tidak dapat dibuktikan.",
     items: [
       {
-        title: "Medsos untuk layanan & brand",
+        title: "Social media untuk layanan",
         tag: "Social Media",
         summary:
-          "Kebutuhan: dipercaya & mudah dipahami. Anda dapat model kehadiran digital yang ramah, profesional, dan selaras layanan — dari pengalaman Leader Klinik.",
+          "Kehadiran digital yang ramah dan profesional di konteks layanan—konten informatif yang selaras operasional harian.",
         points: [
-          "Konten yang membantu calon klien memutuskan",
-          "Selaras standar layanan harian",
-          "Konsistensi dulu; tanpa angka dikarang",
+          "Konten yang membantu audiens memahami layanan",
+          "Selaras dengan standar pelayanan",
+          "Prioritas konsistensi dan kejelasan",
         ],
         image: "/assets/mood-desk.jpg",
         span: "wide",
@@ -209,24 +208,24 @@ export const id: SiteCopy = {
         title: "Fondasi digital marketing",
         tag: "Sertifikasi",
         summary:
-          "Kebutuhan: tidak coba-coba. Anda dapat partner yang punya kerangka formal copywriting & TikTok Ads (MySkill).",
+          "Kerangka formal melalui copywriting dan TikTok Ads (MySkill) untuk mendukung eksekusi yang terarah.",
         points: [
           "Copywriting Introduction (MySkill)",
           "TikTok Ads: BTA, CKTA, MTA, STA",
-          "Cocok brand kecil, jasa, & freelance",
+          "Cocok untuk brand kecil dan bisnis jasa",
         ],
         image: "/assets/mood-linen.jpg",
         span: "half",
       },
       {
-        title: "Disiplin dari kerja lapangan",
+        title: "Disiplin kerja lapangan",
         tag: "Latar belakang",
         summary:
-          "Kebutuhan: orang yang menyelesaikan. VSAT & EV melatih problem solving dan tanggung jawab sampai tugas beres.",
+          "Pengalaman VSAT dan kendaraan listrik membentuk problem solving, kerja tim, dan tanggung jawab menyelesaikan tugas.",
         points: [
           "Troubleshooting di lapangan",
-          "Kolaborasi dengan tim",
-          "Ketelitian sampai selesai",
+          "Kolaborasi tim teknis",
+          "Ketelitian hingga pekerjaan selesai",
         ],
         image: "/assets/mood-leaves.jpg",
         span: "half",
@@ -234,11 +233,11 @@ export const id: SiteCopy = {
     ],
   },
   skills: {
-    title: "Keahlian yang menjawab kebutuhan",
+    title: "Keahlian",
     intro:
-      "Skill utama untuk yang Anda butuhkan di digital. Soft skill untuk cara kerja yang nyaman diajak kolaborasi.",
+      "Kompetensi utama di digital marketing dan konten, didukung soft skill dan pengalaman operasional.",
     labels: {
-      primary: "Fokus digital",
+      primary: "Digital",
       soft: "Cara kerja",
       supporting: "Pendukung",
     },
@@ -253,7 +252,6 @@ export const id: SiteCopy = {
     soft: [
       "Komunikasi",
       "Kepemimpinan layanan",
-      "Pendekatan personal",
       "Problem solving",
       "Manajemen waktu",
       "Administrasi",
@@ -263,12 +261,12 @@ export const id: SiteCopy = {
       "Microsoft Office",
       "Pelayanan klien",
       "Troubleshooting",
-      "Leader klinik",
+      "Operasional klinik",
     ],
   },
   certificates: {
     title: "Sertifikat",
-    intro: "Bukti belajar formal — agar klien tahu fondasi skill saya di copy & TikTok Ads.",
+    intro: "Pelatihan formal di copywriting dan iklan TikTok.",
     items: [
       { name: "Copywriting Introduction", issuer: "MySkill", group: "Copy" },
       { name: "TikTok Ads - BTA", issuer: "MySkill", group: "Ads" },
@@ -280,8 +278,8 @@ export const id: SiteCopy = {
     ],
   },
   contact: {
-    title: "Ceritakan apa yang Anda butuhkan",
-    body: "Tulis brand dan kebutuhan paling penting (medsos, copy, desain, video, atau arah digital marketing). Pilih WhatsApp atau Gmail — kita cocokkan dulu apa yang paling berguna untuk Anda, tanpa komitmen di pesan pertama.",
+    title: "Kontak",
+    body: "Ada proyek digital marketing atau social media? Ceritakan brand dan kebutuhan Anda lewat WhatsApp atau email. Saya akan membalas secepatnya.",
   },
   education: {
     school: "SMKN 69 Jakarta",
@@ -290,11 +288,11 @@ export const id: SiteCopy = {
     line: "Lulusan SMKN 69 Jakarta, Teknik Mekatronika (2019 - 2023).",
   },
   footer: {
-    blurb: "Portofolio · Freelance Digital Marketing & Social Media · Jakarta Timur",
+    blurb: "Digital Marketing & Social Media · Jakarta Timur",
   },
   meta: {
-    title: "Rendi Setiawan | Portofolio Digital Marketing & Social Media",
+    title: "Rendi Setiawan | Digital Marketing & Social Media",
     description:
-      "Portofolio Rendi Setiawan. Nilai jual untuk klien: pesan brand lebih jelas, feed rapi, konten siap tayang (copy, desain, video). Freelance solo, Jakarta Timur.",
+      "Portofolio Rendi Setiawan — freelance digital marketing dan social media: content planning, copywriting, desain, dan edit video. Jakarta Timur.",
   },
 };
