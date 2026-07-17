@@ -53,7 +53,7 @@ export function Experience() {
                   <h3 className="mt-2 font-[family-name:var(--font-display)] text-xl font-bold tracking-tight text-[var(--color-ink)]">
                     {job.company}
                   </h3>
-                  <p className="mt-1 text-sm font-semibold text-[var(--color-forest)] dark:text-[var(--color-accent-deep)]">
+                  <p className="mt-1 text-sm font-semibold text-[var(--color-accent-deep)]">
                     {job.role}
                   </p>
                 </div>

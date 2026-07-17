@@ -1,57 +1,59 @@
-/* stitch-design-taste · editorial content studio · variance 7 · motion 5 · density 4
-   See web/DESIGN.md — mood assets: desk/linen/leaves/bokeh/wash match portfolio themes */
+/* stitch-design-taste · high-contrast editorial
+   WCAG-minded text/background pairs — see .text-on-* utilities */
 @import "tailwindcss";
 
 :root {
-  /* Paper / surface — bright for contrast */
-  --color-paper: #fafaf8;
+  /* Surfaces */
+  --color-paper: #f7f6f3;
   --color-paper-2: #ffffff;
-  /* Ink — near charcoal, never pure black */
-  --color-ink: #141816;
-  --color-ink-soft: #3f4541;
-  --color-ink-muted: #6b736e;
-  /* Edges — stronger than soft-forest */
-  --color-border: #d6dbd7;
-  --color-border-strong: #a8b0aa;
-  /* Single accent: Ember (warm copper, sat < 80%) */
-  --color-accent: #c45c26;
-  --color-accent-hover: #a34b1e;
-  --color-accent-deep: #8f4019;
-  --color-accent-soft: #f5e6dc;
-  /* Punch band for inverted blocks */
-  --color-forest: #1e3d32;
-  --color-on-accent: #f4f7f5;
-  --color-peach-soft: #f5e6dc;
-  --color-focus: #c45c26;
+  /* Text on light surfaces (min ~4.5:1 on paper) */
+  --color-ink: #121614;
+  --color-ink-soft: #2f3632;
+  --color-ink-muted: #4f5853;
+  /* Borders */
+  --color-border: #d0d5d1;
+  --color-border-strong: #8f9892;
+  /* Accent ember — CTAs only */
+  --color-accent: #b84f1c;
+  --color-accent-hover: #9a4217;
+  --color-accent-deep: #7a3412;
+  --color-accent-soft: #f3e4d8;
+  /* Dark punch bands */
+  --color-forest: #17352b;
+  /* ALWAYS use on punch/ember for light text on dark/colored fills */
+  --color-on-accent: #ffffff;
+  --color-on-forest: #f5f8f6;
+  --color-peach-soft: #f3e4d8;
+  --color-focus: #b84f1c;
   --radius-card: 1.35rem;
   --radius-btn: 999px;
   --font-display: var(--font-outfit);
   --font-body: var(--font-outfit);
   --z-nav: 40;
   --z-grain: 50;
-  /* Shadow tinted to charcoal */
-  --shadow-card: 0 18px 50px -28px rgb(20 24 22 / 0.28);
-  --shadow-photo: 0 28px 60px -28px rgb(20 24 22 / 0.38);
+  --shadow-card: 0 18px 50px -28px rgb(18 22 20 / 0.3);
+  --shadow-photo: 0 28px 60px -28px rgb(18 22 20 / 0.4);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-paper: #121514;
-    --color-paper-2: #1a1f1c;
-    --color-ink: #f2f4f3;
-    --color-ink-soft: #b8c0bb;
-    --color-ink-muted: #8a938e;
-    --color-border: #2c3330;
-    --color-border-strong: #4a534e;
-    --color-accent: #e07a45;
-    --color-accent-hover: #eb8f5f;
-    --color-accent-deep: #f0a57a;
-    --color-accent-soft: #3a2820;
-    --color-forest: #0f241c;
-    /* Keep light text on accent + forest punch for WCAG contrast */
-    --color-on-accent: #f4f7f5;
-    --color-peach-soft: #2a221c;
-    --color-focus: #e07a45;
+    --color-paper: #0e1210;
+    --color-paper-2: #171c19;
+    --color-ink: #f3f5f4;
+    --color-ink-soft: #c8d0cb;
+    --color-ink-muted: #9aa59e;
+    --color-border: #2a322e;
+    --color-border-strong: #5a665f;
+    --color-accent: #e8894a;
+    --color-accent-hover: #f09a5e;
+    --color-accent-deep: #f5b07a;
+    /* Soft surface stays readable with dark ink? No — use light text on dark soft */
+    --color-accent-soft: #3d2a1f;
+    --color-forest: #0c221a;
+    --color-on-accent: #ffffff;
+    --color-on-forest: #f5f8f6;
+    --color-peach-soft: #2a2018;
+    --color-focus: #e8894a;
     --shadow-card: 0 18px 50px -28px rgb(0 0 0 / 0.55);
     --shadow-photo: 0 28px 60px -28px rgb(0 0 0 / 0.65);
   }
@@ -75,14 +77,13 @@ body {
   overflow-x: clip;
 }
 
-/* Subtle grain — lower than soft-forest so contrast stays crisp */
 body::after {
   content: "";
   position: fixed;
   inset: 0;
   z-index: var(--z-grain);
   pointer-events: none;
-  opacity: 0.022;
+  opacity: 0.02;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
@@ -120,8 +121,8 @@ body::after {
 }
 
 ::selection {
-  background: var(--color-accent-soft);
-  color: var(--color-ink);
+  background: var(--color-accent);
+  color: var(--color-on-accent);
 }
 
 a:focus-visible,
@@ -130,7 +131,6 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
-/* High-contrast utility hooks used by sections */
 .hc-card {
   box-shadow: var(--shadow-card);
 }
@@ -139,12 +139,43 @@ button:focus-visible {
   box-shadow: var(--shadow-photo);
 }
 
-/* Alternating section rhythm */
+/* Safe contrast pairs */
+.bg-punch {
+  background-color: var(--color-forest);
+  color: var(--color-on-forest);
+}
+
+.bg-ember {
+  background-color: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+.text-on-punch {
+  color: var(--color-on-forest);
+}
+
+.text-on-ember {
+  color: var(--color-on-accent);
+}
+
+/* Soft accent chip: always dark-enough text on light peach in light mode;
+   in dark mode use light text on deep brown */
+.chip-soft {
+  background-color: var(--color-accent-soft);
+  color: var(--color-accent-deep);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 35%, transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+  .chip-soft {
+    color: var(--color-accent-deep);
+  }
+}
+
 .section-band {
   position: relative;
 }
 
-/* Soft mesh glow for dark bands */
 .mesh-glow::before {
   content: "";
   position: absolute;
@@ -152,7 +183,7 @@ button:focus-visible {
   pointer-events: none;
   background: radial-gradient(
     ellipse 60% 50% at 80% 0%,
-    color-mix(in srgb, var(--color-accent) 22%, transparent),
+    color-mix(in srgb, var(--color-accent) 18%, transparent),
     transparent 70%
   );
 }

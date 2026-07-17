@@ -8,7 +8,7 @@ export function Platforms() {
 
   return (
     <section
-      className="border-t border-[var(--color-ink)] bg-[var(--color-ink)] py-16 sm:py-20"
+      className="border-t border-[var(--color-forest)] bg-[var(--color-forest)] py-16 sm:py-20"
       aria-labelledby="platforms-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
@@ -20,12 +20,12 @@ export function Platforms() {
               </p>
               <h2
                 id="platforms-heading"
-                className="font-[family-name:var(--font-display)] text-2xl font-bold tracking-tight text-[var(--color-on-accent)] sm:text-3xl"
+                className="font-[family-name:var(--font-display)] text-2xl font-bold tracking-tight text-[var(--color-on-forest)] sm:text-3xl"
               >
                 {site.platforms.title}
               </h2>
             </div>
-            <p className="max-w-sm text-sm text-[var(--color-on-accent)]/65">
+            <p className="max-w-sm text-sm text-[var(--color-on-forest)] opacity-90">
               {site.platforms.intro}
             </p>
           </div>
@@ -37,16 +37,28 @@ export function Platforms() {
               <div
                 className={`flex items-center justify-between gap-4 rounded-2xl border px-5 py-4 transition-colors ${
                   i % 3 === 0
-                    ? "border-[var(--color-accent)]/50 bg-[var(--color-accent)]/10"
+                    ? "border-[var(--color-accent)] bg-[var(--color-accent)]"
                     : i % 3 === 1
-                      ? "border-[var(--color-on-accent)]/15 bg-[var(--color-on-accent)]/5"
-                      : "border-[var(--color-on-accent)]/20 bg-transparent"
+                      ? "border-[var(--color-on-forest)]/25 bg-[var(--color-on-forest)]/10"
+                      : "border-[var(--color-on-forest)]/30 bg-transparent"
                 }`}
               >
-                <span className="font-[family-name:var(--font-display)] text-lg font-semibold text-[var(--color-on-accent)]">
+                <span
+                  className={`font-[family-name:var(--font-display)] text-lg font-semibold ${
+                    i % 3 === 0
+                      ? "text-[var(--color-on-accent)]"
+                      : "text-[var(--color-on-forest)]"
+                  }`}
+                >
                   {p.name}
                 </span>
-                <span className="text-xs font-medium tracking-wide text-[var(--color-on-accent)]/55">
+                <span
+                  className={`text-xs font-medium tracking-wide ${
+                    i % 3 === 0
+                      ? "text-[var(--color-on-accent)] opacity-90"
+                      : "text-[var(--color-on-forest)] opacity-80"
+                  }`}
+                >
                   {p.note}
                 </span>
               </div>

@@ -14,12 +14,12 @@ function spanClass(index: number, total: number): string {
 /** Card surface variety — keeps grid asymmetric, avoids 5 identical cards */
 function cardSurface(i: number, wide: boolean): string {
   if (wide) {
-    return "border-[var(--color-forest)] bg-[var(--color-forest)] text-[var(--color-on-accent)]";
+    return "border-[var(--color-forest)] bg-[var(--color-forest)]";
   }
   const variants = [
     "hc-card border-[var(--color-border-strong)] bg-[var(--color-paper-2)]",
     "border-2 border-[var(--color-ink)] bg-[var(--color-paper)]",
-    "border border-[var(--color-accent)]/40 bg-[var(--color-accent-soft)]",
+    "border border-[var(--color-border-strong)] bg-[var(--color-paper)]",
     "border-l-4 border border-[var(--color-border-strong)] border-l-[var(--color-accent)] bg-[var(--color-paper-2)]",
   ];
   return variants[(i - 1) % variants.length];
@@ -64,8 +64,8 @@ export function Services() {
                       <p
                         className={`text-xs font-bold uppercase tracking-[0.16em] ${
                           wide
-                            ? "text-[var(--color-on-accent)]/65"
-                            : "text-[var(--color-accent)]"
+                            ? "text-[var(--color-on-forest)]"
+                            : "text-[var(--color-accent-deep)]"
                         }`}
                       >
                         {item.hint}
@@ -73,8 +73,8 @@ export function Services() {
                       <span
                         className={`font-[family-name:var(--font-display)] text-2xl font-bold tabular-nums ${
                           wide
-                            ? "text-[var(--color-on-accent)]/20"
-                            : "text-[var(--color-ink)]/10"
+                            ? "text-[var(--color-on-forest)] opacity-30"
+                            : "text-[var(--color-ink)] opacity-15"
                         }`}
                         aria-hidden
                       >
@@ -84,7 +84,7 @@ export function Services() {
                     <h3
                       className={`mt-4 font-[family-name:var(--font-display)] text-xl font-bold tracking-tight sm:text-2xl ${
                         wide
-                          ? "text-[var(--color-on-accent)]"
+                          ? "text-[var(--color-on-forest)]"
                           : "text-[var(--color-ink)]"
                       }`}
                     >
@@ -93,7 +93,7 @@ export function Services() {
                     <p
                       className={`mt-3 max-w-md text-sm leading-relaxed sm:text-base ${
                         wide
-                          ? "text-[var(--color-on-accent)]/85"
+                          ? "text-[var(--color-on-forest)] opacity-90"
                           : "text-[var(--color-ink-soft)]"
                       }`}
                     >

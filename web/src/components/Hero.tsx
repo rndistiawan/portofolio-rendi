@@ -94,21 +94,21 @@ export function Hero() {
               href={site.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center gap-2 rounded-full bg-[var(--color-accent)] px-6 py-3 text-sm font-semibold text-[var(--color-on-accent)] shadow-[0_12px_32px_-12px_rgb(196_92_38/0.55)] transition-[transform,background] hover:bg-[var(--color-accent-hover)] active:translate-y-px"
+              className="inline-flex min-h-11 items-center gap-2 rounded-full bg-[var(--color-accent)] px-6 py-3 text-sm font-semibold text-[var(--color-on-accent)] shadow-[0_12px_32px_-12px_rgb(184_79_28/0.5)] transition-[transform,background] hover:bg-[var(--color-accent-hover)] active:translate-y-px"
             >
               {site.hero.ctaPrimary}
               <ArrowUpRight size={16} weight="bold" />
             </a>
             <a
               href={`mailto:${site.email}`}
-              className="inline-flex min-h-11 items-center rounded-full border-2 border-[var(--color-ink)] bg-transparent px-6 py-3 text-sm font-semibold text-[var(--color-ink)] transition-colors hover:bg-[var(--color-ink)] hover:text-[var(--color-on-accent)]"
+              className="inline-flex min-h-11 items-center rounded-full border-2 border-[var(--color-ink)] bg-[var(--color-paper)] px-6 py-3 text-sm font-semibold text-[var(--color-ink)] transition-colors hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)]"
             >
               {site.hero.ctaSecondary}
             </a>
             <a
               href={site.cv}
               download="CV-Rendi-Setiawan.pdf"
-              className="inline-flex min-h-11 items-center rounded-full bg-[var(--color-forest)] px-6 py-3 text-sm font-semibold text-[var(--color-on-accent)] transition-opacity hover:opacity-90"
+              className="inline-flex min-h-11 items-center rounded-full bg-[var(--color-forest)] px-6 py-3 text-sm font-semibold text-[var(--color-on-forest)] transition-opacity hover:opacity-90"
             >
               {site.cta.cv}
             </a>
@@ -155,7 +155,7 @@ export function Hero() {
                 sizes="200px"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[var(--color-forest)] to-transparent p-3">
-                <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-on-accent)]/80">
+                <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-on-forest)]">
                   Social · Content
                 </p>
               </div>

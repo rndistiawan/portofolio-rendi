@@ -14,10 +14,10 @@ export function QuoteBand() {
       <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-8">
         <Reveal>
           <blockquote>
-            <p className="font-[family-name:var(--font-display)] text-xl font-semibold leading-relaxed tracking-tight text-[var(--color-on-accent)] sm:text-2xl md:text-[1.75rem]">
+            <p className="font-[family-name:var(--font-display)] text-xl font-semibold leading-relaxed tracking-tight text-[var(--color-on-forest)] sm:text-2xl md:text-[1.75rem]">
               “{site.quoteBand.text}”
             </p>
-            <footer className="mt-8 text-sm font-semibold tracking-wide text-[var(--color-accent)]">
+            <footer className="mt-8 text-sm font-bold tracking-wide text-[var(--color-accent)]">
               — {site.quoteBand.by}
             </footer>
           </blockquote>

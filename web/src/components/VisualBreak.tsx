@@ -58,7 +58,7 @@ export function VisualBreak() {
                 sizes="(max-width:640px) 50vw, 25vw"
               />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[rgb(20_24_22/0.55)] via-transparent to-transparent opacity-80" />
-              <span className="absolute bottom-3 left-3 text-xs font-semibold tracking-wide text-[var(--color-on-accent)]">
+              <span className="absolute bottom-3 left-3 rounded-md bg-[var(--color-ink)]/75 px-2 py-1 text-xs font-semibold tracking-wide text-[var(--color-paper)]">
                 {t.label}
               </span>
             </div>

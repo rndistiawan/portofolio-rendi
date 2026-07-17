@@ -35,7 +35,7 @@ function ProjectCard({
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[rgb(20_24_22/0.25)] to-transparent" />
       </div>
       <div className="flex flex-1 flex-col p-6 sm:p-7">
-        <span className="w-fit rounded-full bg-[var(--color-accent-soft)] px-3 py-1 text-xs font-semibold tracking-wide text-[var(--color-accent-deep)]">
+        <span className="chip-soft w-fit rounded-full px-3 py-1 text-xs font-semibold tracking-wide">
           {project.tag}
         </span>
         <h3 className="mt-4 font-[family-name:var(--font-display)] text-xl font-semibold leading-snug text-[var(--color-ink)]">

@@ -22,14 +22,12 @@ export function SectionHeader({
   light?: boolean;
 }) {
   const titleCls = light
-    ? "text-[var(--color-on-accent)]"
+    ? "text-[var(--color-on-forest)]"
     : "text-[var(--color-ink)]";
   const introCls = light
-    ? "text-[var(--color-on-accent)]/80"
+    ? "text-[var(--color-on-forest)] opacity-90"
     : "text-[var(--color-ink-soft)]";
-  const eyeCls = light
-    ? "text-[var(--color-accent)]"
-    : "text-[var(--color-accent)]";
+  const eyeCls = "text-[var(--color-accent)]";
 
   if (variant === "split") {
     return (
@@ -66,7 +64,7 @@ export function SectionHeader({
         <div className="grid gap-4 lg:grid-cols-[auto_1fr] lg:items-end lg:gap-10">
           {index ? (
             <span
-              className="font-[family-name:var(--font-display)] text-[clamp(3.5rem,8vw,5.5rem)] font-bold leading-none tracking-tighter text-[var(--color-accent)]/25"
+              className="font-[family-name:var(--font-display)] text-[clamp(3.5rem,8vw,5.5rem)] font-bold leading-none tracking-tighter text-[var(--color-accent)] opacity-30"
               aria-hidden
             >
               {index}

@@ -19,12 +19,12 @@ function ChipRow({
       return "rounded-full bg-[var(--color-accent)] px-3.5 py-1.5 text-sm font-semibold text-[var(--color-on-accent)]";
     }
     if (style === "ink") {
-      return "rounded-full bg-[var(--color-ink)] px-3.5 py-1.5 text-sm font-medium text-[var(--color-on-accent)]";
+      return "rounded-full bg-[var(--color-ink)] px-3.5 py-1.5 text-sm font-medium text-[var(--color-paper)]";
     }
     if (style === "soft") {
-      return "rounded-lg border border-[var(--color-accent)]/30 bg-[var(--color-accent-soft)] px-3.5 py-1.5 text-sm font-medium text-[var(--color-accent-deep)]";
+      return "chip-soft rounded-lg px-3.5 py-1.5 text-sm font-semibold";
     }
-    return "rounded-full border border-[var(--color-border-strong)] bg-[var(--color-paper)] px-3.5 py-1.5 text-sm text-[var(--color-ink-soft)]";
+    return "rounded-full border border-[var(--color-border-strong)] bg-[var(--color-paper)] px-3.5 py-1.5 text-sm font-medium text-[var(--color-ink)]";
   };
 
   return (
@@ -71,7 +71,7 @@ export function Skills() {
                 sizes="(max-width:1024px) 100vw, 40vw"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-[var(--color-forest)]/50 to-transparent" />
-              <p className="absolute bottom-4 left-4 right-4 text-sm font-semibold text-[var(--color-on-accent)]">
+              <p className="absolute bottom-4 left-4 right-4 text-sm font-semibold text-[var(--color-on-forest)] drop-shadow">
                 Content · Design · Delivery
               </p>
             </div>
@@ -119,7 +119,7 @@ export function Skills() {
                 key={cert.name}
                 className={`rounded-[var(--radius-card)] border p-4 transition-transform hover:-translate-y-0.5 ${
                   i % 4 === 0
-                    ? "border-[var(--color-forest)] bg-[var(--color-forest)] text-[var(--color-on-accent)]"
+                    ? "border-[var(--color-forest)] bg-[var(--color-forest)]"
                     : i % 4 === 1
                       ? "border-[var(--color-ink)] bg-[var(--color-paper)]"
                       : "border-[var(--color-border-strong)] bg-[var(--color-paper-2)]"
@@ -129,7 +129,7 @@ export function Skills() {
                   className={`text-xs font-bold uppercase tracking-wide ${
                     i % 4 === 0
                       ? "text-[var(--color-accent)]"
-                      : "text-[var(--color-accent)]"
+                      : "text-[var(--color-accent-deep)]"
                   }`}
                 >
                   {cert.group}
@@ -137,7 +137,7 @@ export function Skills() {
                 <p
                   className={`mt-2 font-semibold leading-snug ${
                     i % 4 === 0
-                      ? "text-[var(--color-on-accent)]"
+                      ? "text-[var(--color-on-forest)]"
                       : "text-[var(--color-ink)]"
                   }`}
                 >
@@ -146,7 +146,7 @@ export function Skills() {
                 <p
                   className={`mt-1 text-sm ${
                     i % 4 === 0
-                      ? "text-[var(--color-on-accent)]/70"
+                      ? "text-[var(--color-on-forest)] opacity-85"
                       : "text-[var(--color-ink-muted)]"
                   }`}
                 >

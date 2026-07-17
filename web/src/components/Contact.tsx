@@ -16,16 +16,16 @@ export function Contact() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
         <Reveal>
-          <div className="relative overflow-hidden rounded-[1.75rem] border border-[var(--color-border)]">
+          <div className="relative overflow-hidden rounded-[1.75rem] border-2 border-[var(--color-ink)] bg-[var(--color-paper-2)]">
             <div className="absolute inset-0">
               <Image
                 src={site.moods.wash}
                 alt=""
                 fill
-                className="object-cover opacity-40"
+                className="object-cover opacity-20"
                 sizes="100vw"
               />
-              <div className="absolute inset-0 bg-[linear-gradient(120deg,var(--color-paper)_25%,color-mix(in_oklab,var(--color-paper)_75%,var(--color-accent-soft))_100%)]" />
+              <div className="absolute inset-0 bg-[var(--color-paper-2)]/92" />
             </div>
 
             <div className="relative grid gap-10 p-8 sm:p-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
@@ -51,21 +51,21 @@ export function Contact() {
                   </a>
                   <a
                     href={`mailto:${site.email}`}
-                    className="inline-flex min-h-11 items-center rounded-full border border-[var(--color-border-strong)] bg-[var(--color-paper)] px-6 py-3 text-sm font-semibold text-[var(--color-ink)] hover:bg-[var(--color-paper-2)]"
+                    className="inline-flex min-h-11 items-center rounded-full border-2 border-[var(--color-ink)] bg-[var(--color-paper)] px-6 py-3 text-sm font-semibold text-[var(--color-ink)] hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)]"
                   >
                     {site.cta.email}
                   </a>
                   <a
                     href={site.cv}
                     download="CV-Rendi-Setiawan.pdf"
-                    className="inline-flex min-h-11 items-center rounded-full border border-[var(--color-border-strong)] bg-[var(--color-paper)] px-6 py-3 text-sm font-semibold text-[var(--color-ink)] transition-colors hover:border-[var(--color-ink)] hover:bg-[var(--color-paper-2)]"
+                    className="inline-flex min-h-11 items-center rounded-full bg-[var(--color-forest)] px-6 py-3 text-sm font-semibold text-[var(--color-on-forest)] transition-opacity hover:opacity-90"
                   >
                     {site.cta.cv}
                   </a>
                 </div>
               </div>
 
-              <dl className="space-y-5 rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-paper)]/90 p-6 backdrop-blur-sm">
+              <dl className="space-y-5 rounded-[var(--radius-card)] border border-[var(--color-border-strong)] bg-[var(--color-paper)] p-6 shadow-[var(--shadow-card)]">
                 <div className="flex gap-3">
                   <EnvelopeSimple
                     size={20}

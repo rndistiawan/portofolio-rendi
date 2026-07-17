@@ -71,7 +71,7 @@ export function About() {
                   key={v.title}
                   className={`rounded-[var(--radius-card)] p-4 ${
                     i === 0
-                      ? "bg-[var(--color-forest)] text-[var(--color-on-accent)]"
+                      ? "bg-[var(--color-forest)]"
                       : i === 1
                         ? "border-2 border-[var(--color-ink)] bg-[var(--color-paper)]"
                         : "hc-card border border-[var(--color-border-strong)] bg-[var(--color-paper-2)]"
@@ -80,7 +80,7 @@ export function About() {
                   <h3
                     className={`font-[family-name:var(--font-display)] text-base font-bold tracking-tight ${
                       i === 0
-                        ? "text-[var(--color-on-accent)]"
+                        ? "text-[var(--color-on-forest)]"
                         : "text-[var(--color-ink)]"
                     }`}
                   >
@@ -89,7 +89,7 @@ export function About() {
                   <p
                     className={`mt-1.5 text-sm leading-relaxed ${
                       i === 0
-                        ? "text-[var(--color-on-accent)]/80"
+                        ? "text-[var(--color-on-forest)] opacity-90"
                         : "text-[var(--color-ink-soft)]"
                     }`}
                   >

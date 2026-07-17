@@ -43,7 +43,7 @@ export function Process() {
                 />
               ) : null}
               <article className="relative h-full border border-[var(--color-border-strong)] bg-[var(--color-paper)] p-6 sm:border-r-0 sm:last:border-r lg:border-y lg:border-l-0 lg:first:border-l lg:first:rounded-l-[var(--radius-card)] lg:last:rounded-r-[var(--radius-card)] rounded-[var(--radius-card)] lg:rounded-none">
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--color-forest)] font-[family-name:var(--font-display)] text-sm font-bold text-[var(--color-on-accent)]">
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--color-forest)] font-[family-name:var(--font-display)] text-sm font-bold text-[var(--color-on-forest)]">
                   {s.step}
                 </div>
                 <h3 className="font-[family-name:var(--font-display)] text-lg font-bold tracking-tight text-[var(--color-ink)]">
