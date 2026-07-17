@@ -166,10 +166,12 @@ export const en: SiteCopy = {
     eyebrow: "Visual",
     title: "Work & content atmosphere",
     tiles: [
-      { key: "desk", label: "Content desk" },
-      { key: "linen", label: "Brand mood" },
-      { key: "leaves", label: "Calm service" },
-      { key: "bokeh", label: "Studio light" },
+      { key: "plan", label: "Content plan", span: "hero" },
+      { key: "reel", label: "Video edit", span: "tall" },
+      { key: "brand", label: "Brand moodboard", span: "square" },
+      { key: "board", label: "Planning board", span: "wide" },
+      { key: "clinic", label: "Calm service", span: "square" },
+      { key: "desk", label: "Content desk", span: "square" },
     ],
   },
   quoteBand: {
@@ -227,7 +229,7 @@ export const en: SiteCopy = {
           "Aligned with service standards",
           "Clarity and consistency first",
         ],
-        image: "/assets/mood-desk.jpg",
+        image: "/assets/mood-clinic.jpg",
         span: "wide",
       },
       {
@@ -240,7 +242,7 @@ export const en: SiteCopy = {
           "TikTok Ads: BTA, CKTA, MTA, STA",
           "Fits small brands and service businesses",
         ],
-        image: "/assets/mood-linen.jpg",
+        image: "/assets/mood-brand.jpg",
         span: "half",
       },
       {
@@ -253,7 +255,7 @@ export const en: SiteCopy = {
           "Technical team collaboration",
           "Care through completion",
         ],
-        image: "/assets/mood-leaves.jpg",
+        image: "/assets/mood-board.jpg",
         span: "half",
       },
     ],

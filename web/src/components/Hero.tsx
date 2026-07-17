@@ -139,7 +139,7 @@ export function Hero() {
             </div>
             <div className="relative col-span-5 aspect-square overflow-hidden rounded-[1.25rem] border border-[var(--color-border-strong)]">
               <Image
-                src={site.moods.desk}
+                src={site.moods.reel}
                 alt=""
                 fill
                 className="object-cover"
@@ -148,7 +148,7 @@ export function Hero() {
             </div>
             <div className="relative col-span-5 min-h-[120px] overflow-hidden rounded-[1.25rem] border border-[var(--color-forest)] bg-[var(--color-forest)]">
               <Image
-                src={site.moods.leaves}
+                src={site.moods.brand}
                 alt=""
                 fill
                 className="object-cover opacity-90"

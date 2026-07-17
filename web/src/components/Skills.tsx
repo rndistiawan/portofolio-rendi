@@ -64,7 +64,7 @@ export function Skills() {
             />
             <div className="relative mt-8 min-h-[220px] flex-1 overflow-hidden rounded-[var(--radius-card)] border-2 border-[var(--color-ink)]">
               <Image
-                src={site.moods.linen}
+                src={site.moods.board}
                 alt=""
                 fill
                 className="object-cover"

@@ -17,6 +17,16 @@ const identity = {
     wash: "/assets/mood-wash.jpg",
     linen: "/assets/mood-linen.jpg",
     bokeh: "/assets/mood-bokeh.jpg",
+    /** Content plan / calendar desk flat-lay */
+    plan: "/assets/mood-plan.jpg",
+    /** Short-form video / CapCut-adjacent editing setup */
+    reel: "/assets/mood-reel.jpg",
+    /** Brand moodboard / color swatches (Canva-adjacent) */
+    brand: "/assets/mood-brand.jpg",
+    /** Calm wellness/clinic service atmosphere */
+    clinic: "/assets/mood-clinic.jpg",
+    /** Content planning board on laptop */
+    board: "/assets/mood-board.jpg",
   },
 } as const;
 

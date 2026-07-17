@@ -166,10 +166,12 @@ export const id: SiteCopy = {
     eyebrow: "Visual",
     title: "Suasana kerja & konten",
     tiles: [
-      { key: "desk", label: "Meja konten" },
-      { key: "linen", label: "Mood brand" },
-      { key: "leaves", label: "Layanan tenang" },
-      { key: "bokeh", label: "Cahaya studio" },
+      { key: "plan", label: "Rencana konten", span: "hero" },
+      { key: "reel", label: "Edit video", span: "tall" },
+      { key: "brand", label: "Moodboard brand", span: "square" },
+      { key: "board", label: "Planning board", span: "wide" },
+      { key: "clinic", label: "Layanan tenang", span: "square" },
+      { key: "desk", label: "Meja konten", span: "square" },
     ],
   },
   quoteBand: {
@@ -227,7 +229,7 @@ export const id: SiteCopy = {
           "Selaras dengan standar pelayanan",
           "Prioritas konsistensi dan kejelasan",
         ],
-        image: "/assets/mood-desk.jpg",
+        image: "/assets/mood-clinic.jpg",
         span: "wide",
       },
       {
@@ -240,7 +242,7 @@ export const id: SiteCopy = {
           "TikTok Ads: BTA, CKTA, MTA, STA",
           "Cocok untuk brand kecil dan bisnis jasa",
         ],
-        image: "/assets/mood-linen.jpg",
+        image: "/assets/mood-brand.jpg",
         span: "half",
       },
       {
@@ -253,7 +255,7 @@ export const id: SiteCopy = {
           "Kolaborasi tim teknis",
           "Ketelitian hingga pekerjaan selesai",
         ],
-        image: "/assets/mood-leaves.jpg",
+        image: "/assets/mood-board.jpg",
         span: "half",
       },
     ],

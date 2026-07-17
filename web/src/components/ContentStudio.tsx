@@ -126,7 +126,7 @@ export function ContentStudio() {
                     </div>
                     <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-[var(--color-border)]">
                       <Image
-                        src={site.moods.desk}
+                        src={site.moods.reel}
                         alt=""
                         fill
                         className="object-cover"

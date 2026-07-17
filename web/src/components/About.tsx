@@ -27,7 +27,7 @@ export function About() {
             <div className="grid grid-cols-6 grid-rows-2 gap-3">
               <div className="relative col-span-6 aspect-[16/9] overflow-hidden rounded-[1.5rem] border border-[var(--color-border-strong)] shadow-[var(--shadow-card)] sm:col-span-4 sm:row-span-2 sm:aspect-auto sm:min-h-[320px]">
                 <Image
-                  src={site.moods.desk}
+                  src={site.moods.plan}
                   alt=""
                   fill
                   className="object-cover"
@@ -36,7 +36,7 @@ export function About() {
               </div>
               <div className="relative col-span-3 min-h-[140px] overflow-hidden rounded-[1.25rem] border-2 border-[var(--color-ink)] sm:col-span-2">
                 <Image
-                  src={site.moods.linen}
+                  src={site.moods.brand}
                   alt=""
                   fill
                   className="object-cover"
@@ -45,7 +45,7 @@ export function About() {
               </div>
               <div className="relative col-span-3 min-h-[140px] overflow-hidden rounded-[1.25rem] border border-[var(--color-forest)] sm:col-span-2">
                 <Image
-                  src={site.moods.leaves}
+                  src={site.moods.clinic}
                   alt=""
                   fill
                   className="object-cover"

@@ -72,7 +72,20 @@ export type SiteCopy = {
   visualBreak: {
     eyebrow: string;
     title: string;
-    tiles: readonly { key: "desk" | "linen" | "leaves" | "bokeh"; label: string }[];
+    tiles: readonly {
+      key:
+        | "desk"
+        | "linen"
+        | "leaves"
+        | "bokeh"
+        | "plan"
+        | "reel"
+        | "brand"
+        | "clinic"
+        | "board";
+      label: string;
+      span?: "hero" | "wide" | "tall" | "square";
+    }[];
   };
   quoteBand: { text: string; by: string };
   experience: {
@@ -135,5 +148,10 @@ export type SiteContent = SiteCopy & {
     wash: string;
     linen: string;
     bokeh: string;
+    plan: string;
+    reel: string;
+    brand: string;
+    clinic: string;
+    board: string;
   };
 };

@@ -4,24 +4,23 @@ import Image from "next/image";
 import { useSite } from "@/components/LanguageProvider";
 import { Reveal } from "@/components/animation/Reveal";
 
-/** Mood gallery — content studio imagery matched to portfolio themes */
+function spanClass(span?: "hero" | "wide" | "tall" | "square"): string {
+  switch (span) {
+    case "hero":
+      return "sm:col-span-2 sm:row-span-2";
+    case "wide":
+      return "sm:col-span-2";
+    case "tall":
+      return "sm:row-span-2";
+    default:
+      return "";
+  }
+}
+
+/** Asymmetric mood gallery — content-studio imagery for digital marketing portfolio */
 export function VisualBreak() {
   const site = useSite();
   const { visualBreak } = site;
-
-  const tiles = visualBreak.tiles.map((t) => {
-    const layout =
-      t.key === "desk"
-        ? "sm:col-span-2 sm:row-span-2"
-        : t.key === "bokeh"
-          ? "sm:col-span-2"
-          : "";
-    return {
-      src: site.moods[t.key],
-      className: layout,
-      label: t.label,
-    };
-  });
 
   return (
     <section
@@ -37,21 +36,21 @@ export function VisualBreak() {
             {visualBreak.title}
           </p>
         </Reveal>
-        <div className="grid auto-rows-[140px] grid-cols-2 gap-3 sm:auto-rows-[180px] sm:grid-cols-4 sm:gap-4">
-          {tiles.map((t) => (
+        <div className="grid auto-rows-[120px] grid-cols-2 gap-3 sm:auto-rows-[160px] sm:grid-cols-4 sm:gap-4">
+          {visualBreak.tiles.map((t) => (
             <div
-              key={t.src + t.label}
-              className={`group relative overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-border-strong)] ${t.className}`}
+              key={`${t.key}-${t.label}`}
+              className={`group relative overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-border-strong)] ${spanClass(t.span)}`}
             >
               <Image
-                src={t.src}
+                src={site.moods[t.key]}
                 alt={t.label}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                 sizes="(max-width:640px) 50vw, 25vw"
               />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[rgb(20_24_22/0.55)] via-transparent to-transparent opacity-80" />
-              <span className="absolute bottom-3 left-3 rounded-md bg-[var(--color-ink)]/75 px-2 py-1 text-xs font-semibold tracking-wide text-[var(--color-paper)]">
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[rgb(20_24_22/0.6)] via-transparent to-transparent opacity-85" />
+              <span className="absolute bottom-3 left-3 rounded-md bg-[var(--color-ink)]/80 px-2 py-1 text-xs font-semibold tracking-wide text-[var(--color-paper)]">
                 {t.label}
               </span>
             </div>
