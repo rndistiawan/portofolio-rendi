@@ -55,7 +55,7 @@ export const id: SiteCopy = {
     title: "Kenalan dulu",
     paragraphs: [
       "Saya Rendi — freelance solo di digital marketing dan social media. Saya mendampingi brand (termasuk sesama freelance dan bisnis kecil) agar kehadiran online terasa rapi, manusiawi, dan bermanfaat bagi audiens.",
-      "Fokus saya full di medsos dan digital: merencanakan, menulis, mendesain, mengedit video singkat, dan mengeksekusi posting. Latar operasional dan lapangan sebelumnya membantu saya tetap teliti dan komunikatif.",
+      "Fokus saya full di medsos dan digital: merencanakan, menulis, mendesain, mengedit video singkat, dan mengeksekusi posting. Sebagai Leader Klinik di layanan wellness/HBOT, saya terbiasa memimpin alur layanan, berkomunikasi rapi, dan menyelesaikan kerja sampai beres.",
       "Yang ingin Anda rasakan setelah kita kerja bareng: lebih lega urusan konten, pesan brand lebih mudah dipahami, dan ritme posting yang realistis — tanpa tekanan jualan di setiap pesan.",
     ],
     values: [
@@ -150,16 +150,17 @@ export const id: SiteCopy = {
   experience: {
     title: "Pengalaman kerja",
     intro:
-      "Riwayat yang membentuk cara kerja saya: teliti, komunikatif, dan siap di sisi digital & operasional.",
+      "Riwayat yang membentuk cara kerja saya: memimpin layanan klinik, teliti di operasional, dan siap di sisi digital.",
     items: [
       {
         company: "Salama Wellness Center · Klinik HBOT",
-        role: "Operasional & Pelayanan",
+        role: "Leader Klinik",
         period: "Sep 2023 - Sekarang",
         bullets: [
-          "Menjaga operasional harian layanan wellness/HBOT agar alur pasien berjalan lancar.",
-          "Melayani pasien dengan komunikasi yang jelas, ramah, dan profesional.",
-          "Membantu administrasi dan pengelolaan media sosial sebagai bagian peran multi-fungsi.",
+          "Memimpin alur layanan harian klinik wellness/HBOT: koordinasi tim, jadwal pasien, dan standar pelayanan agar pengalaman pasien terasa rapi dan tenang.",
+          "Menjaga kualitas komunikasi frontline — menyambut, menjelaskan, dan menindaklanjuti kebutuhan pasien dengan bahasa yang jelas dan profesional.",
+          "Mengatur administrasi, dokumentasi, dan prioritas tugas harian agar operasional tidak macet di titik kritis.",
+          "Mengelola kehadiran digital klinik (konten & media sosial) agar selaras dengan layanan nyata — nilai jual yang sama saya bawa ke klien freelance: rapi, konsisten, dan berorientasi manfaat.",
         ],
       },
       {
@@ -191,10 +192,10 @@ export const id: SiteCopy = {
         title: "Medsos untuk layanan & brand",
         tag: "Social Media",
         summary:
-          "Kehadiran digital yang ramah dan profesional — supaya calon klien lebih mudah percaya dan paham manfaat Anda.",
+          "Dari peran Leader Klinik: kehadiran digital yang ramah dan profesional — supaya calon klien lebih mudah percaya dan paham manfaat Anda.",
         points: [
           "Konten informatif yang membantu audiens",
-          "Selaras dengan operasional harian",
+          "Selaras dengan standar layanan harian",
           "Prioritas konsistensi, bukan angka dikarang",
         ],
         image: "/assets/mood-desk.jpg",
@@ -247,6 +248,7 @@ export const id: SiteCopy = {
     ],
     soft: [
       "Komunikasi",
+      "Kepemimpinan layanan",
       "Pendekatan personal",
       "Problem solving",
       "Manajemen waktu",
@@ -257,7 +259,7 @@ export const id: SiteCopy = {
       "Microsoft Office",
       "Pelayanan klien",
       "Troubleshooting",
-      "Operasional",
+      "Leader klinik",
     ],
   },
   certificates: {

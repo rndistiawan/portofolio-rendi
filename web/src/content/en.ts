@@ -55,7 +55,7 @@ export const en: SiteCopy = {
     title: "Nice to meet you",
     paragraphs: [
       "I'm Rendi — a solo freelance digital marketer and social media partner. I help brands (including fellow freelancers and small businesses) show up online in a way that feels clear, human, and useful to their audience.",
-      "My full focus is social and digital work: planning, writing, design, short video edits, and posting. Earlier field and operations experience keep me careful and easy to work with.",
+      "My full focus is social and digital work: planning, writing, design, short video edits, and posting. As Clinic Leader in wellness/HBOT service, I am used to leading service flow, communicating clearly, and finishing work properly.",
       "What I hope you feel after we collaborate: less content stress, a brand message people understand, and a posting rhythm that is realistic — without hard sell in every message.",
     ],
     values: [
@@ -150,16 +150,17 @@ export const en: SiteCopy = {
   experience: {
     title: "Work experience",
     intro:
-      "Background that shapes how I work: careful, communicative, ready on digital and operations.",
+      "Background that shapes how I work: leading clinic service, careful operations, and digital execution.",
     items: [
       {
         company: "Salama Wellness Center · HBOT Clinic",
-        role: "Operations & Client Care",
+        role: "Clinic Leader",
         period: "Sep 2023 - Present",
         bullets: [
-          "Support daily wellness/HBOT operations so patient flow stays smooth.",
-          "Serve patients with clear, warm, professional communication.",
-          "Help with admin and social media as part of a multi-role day.",
+          "Lead daily wellness/HBOT service flow: team coordination, patient scheduling, and service standards so the patient journey feels clear and calm.",
+          "Own frontline communication quality — welcome, explain, and follow up with patients in language that is clear and professional.",
+          "Run admin, documentation, and day-to-day priorities so operations do not stall at critical points.",
+          "Care for the clinic’s digital presence (content & social) so it matches real service — the same value I bring to freelance clients: tidy, consistent, and benefit-led.",
         ],
       },
       {
@@ -191,10 +192,10 @@ export const en: SiteCopy = {
         title: "Social for services & brands",
         tag: "Social Media",
         summary:
-          "A digital presence that feels warm and professional — so people can trust you and see the benefit you offer.",
+          "From Clinic Leader experience: a digital presence that feels warm and professional — so people can trust you and see the benefit you offer.",
         points: [
           "Helpful, informative content",
-          "Aligned with daily operations",
+          "Aligned with daily service standards",
           "Consistency over invented numbers",
         ],
         image: "/assets/mood-desk.jpg",
@@ -247,6 +248,7 @@ export const en: SiteCopy = {
     ],
     soft: [
       "Communication",
+      "Service leadership",
       "Personal approach",
       "Problem solving",
       "Time management",
@@ -257,7 +259,7 @@ export const en: SiteCopy = {
       "Microsoft Office",
       "Client care",
       "Troubleshooting",
-      "Operations",
+      "Clinic leadership",
     ],
   },
   certificates: {

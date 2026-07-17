@@ -57,7 +57,18 @@ Every section of portfolio copy MUST land in this shape:
 | **Services** | “Yang bisa kita kerjakan” + honest scope. No “langsung order”. |
 | **Process** | Calm steps; collaboration language. |
 | **Projects** | Work angles + honesty about proof limits. |
+| **Experience** | Role title honest; bullets = tugas + nilai jual bagi klien (leadership → reliability in freelance), no fake metrics. |
 | **Contact** | Open door: “Kalau ada yang ingin didiskusikan…” + how you’ll reply. |
+
+### Experience bullets (Leader / service roles)
+
+Each bullet should land as: **what you owned** + **outcome the reader cares about**.
+
+| Do | Avoid |
+|----|--------|
+| “Memimpin alur layanan… agar pasien tenang” | Only “membantu operasional harian” |
+| “Nilai jual yang saya bawa ke klien: rapi, konsisten” | Fake KPIs / patient counts |
+| Leadership verbs: memimpin, mengatur, menjaga kualitas | Passive-only: membantu, mendukung (unless true) |
 | **WA prefill** | Polite intro + soft ask (boleh diskusi?), not “saya butuh jasa sekarang”. |
 | **Quote** | Positioning belief, not sales slogan. |
 
