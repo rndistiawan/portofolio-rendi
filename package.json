@@ -1,5 +1,16 @@
 {
   "name": "portofolio-rendi",
   "private": true,
-  "description": "Monorepo: Next.js app is in web/. Set Vercel Root Directory to web."
+  "description": "Monorepo: Next.js app lives in web/. Root package satisfies Vercel Next.js detection when Root Directory is not set to web.",
+  "scripts": {
+    "dev": "npm run dev --prefix web",
+    "build": "npm run build --prefix web && node scripts/copy-next-output.js",
+    "start": "npm run start --prefix web",
+    "lint": "npm run lint --prefix web"
+  },
+  "dependencies": {
+    "next": "16.2.10",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  }
 }
