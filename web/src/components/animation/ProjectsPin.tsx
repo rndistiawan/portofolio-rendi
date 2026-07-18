@@ -22,23 +22,23 @@ function ProjectCard({
 }) {
   return (
     <article
-      className={`group flex h-full min-h-[360px] flex-col overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-border-strong)] bg-[var(--color-paper)] shadow-[var(--shadow-card)] ${className}`}
+      className={`group flex h-full min-h-[380px] flex-col overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-border-strong)] bg-[var(--color-paper)] shadow-[var(--shadow-card)] transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_24px_50px_-28px_rgb(18_22_20/0.4)] ${className}`}
     >
-      <div className="relative h-48 shrink-0 overflow-hidden">
+      <div className="image-tile relative h-52 shrink-0 overflow-hidden">
         <Image
           src={project.image}
           alt=""
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+          className="image-tile__media object-cover"
           sizes="(max-width:1024px) 100vw, 28vw"
         />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[rgb(20_24_22/0.25)] to-transparent" />
-      </div>
-      <div className="flex flex-1 flex-col p-6 sm:p-7">
-        <span className="chip-soft w-fit rounded-full px-3 py-1 text-xs font-semibold tracking-wide">
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[rgb(20_24_22/0.4)] via-[rgb(20_24_22/0.08)] to-transparent" />
+        <span className="caption-chip absolute bottom-3 left-3 rounded-full border border-white/10 bg-[var(--color-ink)]/70 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[var(--color-paper)]">
           {project.tag}
         </span>
-        <h3 className="mt-4 font-[family-name:var(--font-display)] text-xl font-semibold leading-snug text-[var(--color-ink)]">
+      </div>
+      <div className="flex flex-1 flex-col p-6 sm:p-7">
+        <h3 className="font-[family-name:var(--font-display)] text-xl font-semibold leading-snug text-[var(--color-ink)]">
           {project.title}
         </h3>
         <p className="mt-3 flex-1 text-sm leading-relaxed text-[var(--color-ink-soft)]">
@@ -46,7 +46,13 @@ function ProjectCard({
         </p>
         <ul className="mt-5 space-y-1.5 border-t border-[var(--color-border)] pt-4 text-sm text-[var(--color-ink-soft)]">
           {project.points.map((point) => (
-            <li key={point}>{point}</li>
+            <li key={point} className="flex gap-2">
+              <span
+                className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[var(--color-accent)]"
+                aria-hidden
+              />
+              <span>{point}</span>
+            </li>
           ))}
         </ul>
       </div>

@@ -39,23 +39,27 @@ export function Hero() {
           alt=""
           fill
           priority
-          className="object-cover opacity-[0.14] contrast-125 dark:opacity-[0.1]"
+          className="object-cover opacity-[0.16] contrast-125 dark:opacity-[0.12]"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(165deg,var(--color-paper)_0%,color-mix(in_srgb,var(--color-paper)_70%,transparent)_45%,var(--color-paper)_100%)]" />
-        <div className="absolute -right-20 top-24 h-72 w-72 rounded-full bg-[var(--color-accent)]/10 blur-3xl" />
-        <div className="absolute bottom-10 left-0 h-56 w-56 rounded-full bg-[var(--color-forest)]/10 blur-3xl" />
+        <div className="absolute inset-0 bg-[linear-gradient(165deg,var(--color-paper)_0%,color-mix(in_srgb,var(--color-paper)_68%,transparent)_48%,var(--color-paper)_100%)]" />
+        <div className="absolute -right-16 top-16 h-80 w-80 rounded-full bg-[var(--color-accent)]/12 blur-3xl" />
+        <div className="absolute bottom-8 left-0 h-64 w-64 rounded-full bg-[var(--color-forest)]/12 blur-3xl" />
       </div>
 
       <HeroCanvas />
 
-      <div className="relative mx-auto grid max-w-7xl items-end gap-12 px-4 sm:px-8 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16">
+      <div className="relative mx-auto grid max-w-7xl items-end gap-12 px-4 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14 xl:gap-16">
         <div className="min-w-0 pb-2">
           <motion.div
-            className="mb-5 inline-flex items-center gap-2 rounded-full border border-[var(--color-border-strong)] bg-[var(--color-paper)]/90 px-3 py-1.5 backdrop-blur-sm"
+            className="mb-5 inline-flex items-center gap-2 rounded-full border border-[var(--color-border-strong)] bg-[var(--color-paper)]/90 px-3 py-1.5 shadow-[var(--shadow-card)] backdrop-blur-sm"
             {...item(0.05)}
           >
-            <span className="h-2 w-2 animate-pulse rounded-full bg-[var(--color-accent)]" />
+            <span
+              className={`h-2 w-2 rounded-full bg-[var(--color-accent)] ${
+                reduce ? "" : "animate-pulse"
+              }`}
+            />
             <span className="text-xs font-semibold tracking-wide text-[var(--color-ink-soft)]">
               {site.hero.availability}
             </span>
@@ -63,7 +67,7 @@ export function Hero() {
 
           <motion.h1
             id="hero-heading"
-            className="font-[family-name:var(--font-display)] text-[clamp(2.6rem,6vw,4.5rem)] font-bold leading-[0.98] tracking-[-0.04em] text-[var(--color-ink)]"
+            className="font-[family-name:var(--font-display)] text-[clamp(2.55rem,5.8vw,4.4rem)] font-bold leading-[0.98] tracking-[-0.04em] text-[var(--color-ink)]"
             {...item(0.12)}
           >
             <span className="block">{site.name.split(" ")[0]}</span>
@@ -125,36 +129,45 @@ export function Hero() {
                 transition: { duration: 0.7, delay: 0.2, ease: easeOut },
               })}
         >
+          {/* Soft glow behind collage */}
+          <div
+            className="pointer-events-none absolute -inset-6 -z-10 rounded-[2.5rem] bg-[radial-gradient(circle_at_40%_30%,color-mix(in_srgb,var(--color-accent)_16%,transparent),transparent_62%)]"
+            aria-hidden
+          />
+
           {/* Asymmetric photo collage */}
           <div className="relative grid grid-cols-12 grid-rows-[auto_auto] gap-3">
-            <div className="hc-photo relative col-span-7 row-span-2 overflow-hidden rounded-[1.5rem] border-2 border-[var(--color-ink)] bg-[var(--color-paper-2)]">
+            <div className="image-tile hc-photo photo-vignette relative col-span-7 row-span-2 overflow-hidden rounded-[1.5rem] border-2 border-[var(--color-ink)] bg-[var(--color-paper-2)]">
               <Image
                 src={site.photo}
                 alt={`${site.ui.photoAlt} ${site.name}`}
                 width={640}
                 height={800}
                 priority
-                className="aspect-[3/4] h-auto w-full object-cover object-top"
+                className="image-tile__media aspect-[3/4] h-auto w-full object-cover object-[center_12%]"
               />
             </div>
-            <div className="relative col-span-5 aspect-square overflow-hidden rounded-[1.25rem] border border-[var(--color-border-strong)]">
+
+            <div className="image-tile group relative col-span-5 aspect-square overflow-hidden rounded-[1.25rem] border border-[var(--color-border-strong)] shadow-[var(--shadow-card)]">
               <Image
                 src={site.moods.reel}
                 alt=""
                 fill
-                className="object-cover"
-                sizes="200px"
+                className="image-tile__media object-cover"
+                sizes="220px"
               />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[rgb(18_22_20/0.35)] to-transparent" />
             </div>
-            <div className="relative col-span-5 min-h-[120px] overflow-hidden rounded-[1.25rem] border border-[var(--color-forest)] bg-[var(--color-forest)]">
+
+            <div className="image-tile group relative col-span-5 min-h-[128px] overflow-hidden rounded-[1.25rem] border border-[var(--color-forest)] bg-[var(--color-forest)] shadow-[var(--shadow-card)]">
               <Image
                 src={site.moods.brand}
                 alt=""
                 fill
-                className="object-cover opacity-90"
-                sizes="200px"
+                className="image-tile__media object-cover opacity-90"
+                sizes="220px"
               />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[var(--color-forest)] to-transparent p-3">
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[var(--color-forest)] via-[var(--color-forest)]/70 to-transparent p-3 pt-8">
                 <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-on-forest)]">
                   Social · Content
                 </p>
@@ -162,16 +175,38 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="absolute -bottom-4 -left-3 hidden rounded-2xl border border-[var(--color-border-strong)] bg-[var(--color-paper)] px-4 py-3 shadow-[var(--shadow-card)] sm:block">
+          <motion.div
+            className={`absolute -bottom-4 -left-2 z-10 hidden rounded-2xl border border-[var(--color-border-strong)] bg-[var(--color-paper)] px-4 py-3 shadow-[var(--shadow-card)] sm:block ${
+              reduce ? "" : "hero-float"
+            }`}
+            {...(reduce
+              ? {}
+              : {
+                  initial: { opacity: 0, x: -12 },
+                  animate: { opacity: 1, x: 0 },
+                  transition: { delay: 0.55, duration: 0.5, ease: easeOut },
+                })}
+          >
             <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-accent)]">
               Focus
             </p>
             <p className="text-sm font-semibold text-[var(--color-ink)]">
               Digital Marketing
             </p>
-          </div>
+          </motion.div>
 
-          <div className="absolute -right-2 top-6 hidden flex-col gap-1.5 sm:flex lg:-right-4">
+          <motion.div
+            className={`absolute -right-1 top-5 z-10 hidden flex-col gap-1.5 sm:flex lg:-right-3 ${
+              reduce ? "" : "hero-float-delayed"
+            }`}
+            {...(reduce
+              ? {}
+              : {
+                  initial: { opacity: 0, x: 12 },
+                  animate: { opacity: 1, x: 0 },
+                  transition: { delay: 0.62, duration: 0.5, ease: easeOut },
+                })}
+          >
             {["Feed", "Reels", "Story"].map((label, i) => (
               <span
                 key={label}
@@ -186,7 +221,7 @@ export function Hero() {
                 {label}
               </span>
             ))}
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>

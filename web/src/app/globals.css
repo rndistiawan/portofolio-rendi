@@ -206,3 +206,65 @@ button:focus-visible {
     transparent 70%
   );
 }
+
+/* Image tiles: transform-only hover (perf-safe) */
+.image-tile {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-tile img,
+.image-tile .image-tile__media {
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .image-tile:hover img,
+  .image-tile:hover .image-tile__media,
+  .group:hover .image-tile__media {
+    transform: scale(1.045);
+  }
+
+  .hero-float {
+    animation: hero-float 6.5s ease-in-out infinite;
+  }
+
+  .hero-float-delayed {
+    animation: hero-float 7.2s ease-in-out 0.6s infinite;
+  }
+
+  .studio-phone-float {
+    animation: hero-float 5.8s ease-in-out infinite;
+  }
+}
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Soft vignette on photo stacks */
+.photo-vignette::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    165deg,
+    transparent 40%,
+    color-mix(in srgb, var(--color-ink) 18%, transparent) 100%
+  );
+  opacity: 0.55;
+}
+
+/* Gallery caption chip */
+.caption-chip {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}

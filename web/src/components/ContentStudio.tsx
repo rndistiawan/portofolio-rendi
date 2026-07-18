@@ -71,8 +71,8 @@ export function ContentStudio() {
         <div className="grid items-start gap-8 lg:grid-cols-12 lg:gap-10">
           {/* Phone mock */}
           <Reveal className="lg:col-span-5">
-            <div className="studio-phone mx-auto w-full max-w-[280px] sm:max-w-[300px] lg:mx-0">
-              <div className="studio-phone__bezel relative overflow-hidden rounded-[2rem] border-2 border-[var(--color-ink)] bg-[var(--color-ink)] p-2.5 shadow-[var(--shadow-photo)]">
+            <div className="studio-phone studio-phone-float mx-auto w-full max-w-[280px] sm:max-w-[300px] lg:mx-0">
+              <div className="studio-phone__bezel relative overflow-hidden rounded-[2rem] border-2 border-[var(--color-ink)] bg-[var(--color-ink)] p-2.5 shadow-[var(--shadow-photo)] ring-1 ring-[var(--color-ink)]/10">
                 <div className="absolute left-1/2 top-2 z-10 h-5 w-20 -translate-x-1/2 rounded-full bg-[var(--color-ink)]" />
                 <div className="overflow-hidden rounded-[1.5rem] bg-[var(--color-paper)]">
                   {/* Status / stories */}

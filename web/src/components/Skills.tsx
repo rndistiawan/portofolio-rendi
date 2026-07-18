@@ -62,16 +62,16 @@ export function Skills() {
               intro={site.skills.intro}
               variant="plain"
             />
-            <div className="relative mt-8 min-h-[220px] flex-1 overflow-hidden rounded-[var(--radius-card)] border-2 border-[var(--color-ink)]">
+            <div className="image-tile relative mt-8 min-h-[220px] flex-1 overflow-hidden rounded-[var(--radius-card)] border-2 border-[var(--color-ink)] shadow-[var(--shadow-card)]">
               <Image
                 src={site.moods.board}
                 alt=""
                 fill
-                className="object-cover"
+                className="image-tile__media object-cover"
                 sizes="(max-width:1024px) 100vw, 40vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-[var(--color-forest)]/50 to-transparent" />
-              <p className="absolute bottom-4 left-4 right-4 text-sm font-semibold text-[var(--color-on-forest)] drop-shadow">
+              <div className="absolute inset-0 bg-gradient-to-tr from-[var(--color-forest)]/55 via-[var(--color-forest)]/15 to-transparent" />
+              <p className="caption-chip absolute bottom-4 left-4 right-4 rounded-lg border border-white/10 bg-[var(--color-ink)]/55 px-3 py-2 text-sm font-semibold text-[var(--color-on-forest)]">
                 Content · Design · Delivery
               </p>
             </div>

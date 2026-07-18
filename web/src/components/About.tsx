@@ -25,30 +25,31 @@ export function About() {
         <div className="mt-12 grid gap-10 lg:grid-cols-12 lg:gap-10">
           <Reveal className="lg:col-span-5" delay={0.05}>
             <div className="grid grid-cols-6 grid-rows-2 gap-3">
-              <div className="relative col-span-6 aspect-[16/9] overflow-hidden rounded-[1.5rem] border border-[var(--color-border-strong)] shadow-[var(--shadow-card)] sm:col-span-4 sm:row-span-2 sm:aspect-auto sm:min-h-[320px]">
+              <div className="image-tile relative col-span-6 aspect-[16/9] overflow-hidden rounded-[1.5rem] border border-[var(--color-border-strong)] shadow-[var(--shadow-card)] sm:col-span-4 sm:row-span-2 sm:aspect-auto sm:min-h-[320px]">
                 <Image
                   src={site.moods.plan}
                   alt=""
                   fill
-                  className="object-cover"
+                  className="image-tile__media object-cover"
                   sizes="(max-width:1024px) 100vw, 40vw"
                 />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[rgb(18_22_20/0.28)] to-transparent" />
               </div>
-              <div className="relative col-span-3 min-h-[140px] overflow-hidden rounded-[1.25rem] border-2 border-[var(--color-ink)] sm:col-span-2">
+              <div className="image-tile relative col-span-3 min-h-[140px] overflow-hidden rounded-[1.25rem] border-2 border-[var(--color-ink)] shadow-[var(--shadow-card)] sm:col-span-2">
                 <Image
                   src={site.moods.brand}
                   alt=""
                   fill
-                  className="object-cover"
+                  className="image-tile__media object-cover"
                   sizes="200px"
                 />
               </div>
-              <div className="relative col-span-3 min-h-[140px] overflow-hidden rounded-[1.25rem] border border-[var(--color-forest)] sm:col-span-2">
+              <div className="image-tile relative col-span-3 min-h-[140px] overflow-hidden rounded-[1.25rem] border border-[var(--color-forest)] shadow-[var(--shadow-card)] sm:col-span-2">
                 <Image
                   src={site.moods.clinic}
                   alt=""
                   fill
-                  className="object-cover"
+                  className="image-tile__media object-cover"
                   sizes="200px"
                 />
               </div>
@@ -69,7 +70,7 @@ export function About() {
               {site.about.values.map((v, i) => (
                 <li
                   key={v.title}
-                  className={`rounded-[var(--radius-card)] p-4 ${
+                  className={`rounded-[var(--radius-card)] p-4 transition-transform duration-300 hover:-translate-y-0.5 ${
                     i === 0
                       ? "bg-[var(--color-forest)]"
                       : i === 1
